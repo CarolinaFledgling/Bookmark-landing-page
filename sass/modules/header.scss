@@ -1,0 +1,13 @@
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+}
+
+.section-hero {
+    background: $secondary-bcd-color;
+    padding-bottom: $xl;
+  
+    @include breakpoint-up("lg") {
+      padding: 0 $sm;
+    }
