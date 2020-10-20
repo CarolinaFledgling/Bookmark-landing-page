@@ -1,8 +1,8 @@
 // Colors
 
-// button
+
 $primary-btn-color:hsl(233, 26%, 24%);
-$secondary-btn-color:hsl(0, 94%, 66%);
+$secondary-color:hsl(0, 94%, 66%);
 
 
 // typogrphy
@@ -22,25 +22,21 @@ $secondary-bgc-color:hsl(231, 69%, 60%);
 // Breakpoints
 
 
-$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+$font-weights: ("regular": 400, "medium": 500);
 
-$breakpoints: (
-  'xsm' '375px',
-  'sm': '576px',
-  'md': '768px',
-  'lg': '992px',
-  'xl': '1200px',
-  'xxl':'1440px',
-);
 
-//PADDING
 
-$xs: 0.9rem;
-$sm: 1.4rem;
-$md: 2rem;
-$lg: 2.8rem;
-$xl: 4.5rem;
-$xxl: 6rem;
+
+// BREAKPOINTS
+// $breakpoints: (
+//   'xs':'375px'
+//   'sm': '576px',
+//   'md': '768px',
+//   'lg': '992px',
+//   'xl': '1200px'
+//   'xxl': '1440px'
+// );
+
 
 // ## Layout
 

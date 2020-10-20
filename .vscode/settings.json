@@ -1,0 +1,32 @@
+{
+    "liveSassCompile.settings.formats":[
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/",
+        }
+    ],
+    "telemetry.enableTelemetry": false,
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "git.autofetch": true,
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnSave": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.columnSelection": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.port": 5501,
+}
