@@ -424,7 +424,7 @@ ul {
 }
 
 .menu-nav_link:hover {
-  color: #fa5757;
+  color: #5368df;
 }
 
 .btn__login {
@@ -436,11 +436,75 @@ ul {
           box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  width: 115px;
+  height: 40px;
+  text-align: center;
 }
 
 .btn__login:hover {
   background-color: #fff;
-  color: #fa5757;
+  color: #9194a1;
   border: 1px solid #fa5757;
+}
+
+.section-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 10%;
+  margin: 0 auto;
+}
+
+.heading {
+  width: 50%;
+}
+
+.heading__title {
+  width: 60%;
+}
+
+.heading__description {
+  color: #9194a1;
+  margin: 2.2rem 0;
+  width: 80%;
+  line-height: 1.5rem;
+}
+
+.heading-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn {
+  padding: 9px 5px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
+          box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.heading-buttons-Chrome {
+  background-color: #5368df;
+  margin-right: 1rem;
+  width: 166px;
+  height: 50px;
+}
+
+.heading-buttons-Firefox {
+  background-color: #9194a1;
+  color: #252b46;
+  width: 166px;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */
