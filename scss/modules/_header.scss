@@ -1,15 +1,18 @@
+.section-hero >{
+    position: relative;
+  
+}
 .header{
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 .main-header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding:2rem;
 
     &__logo{
     cursor: pointer;
@@ -18,18 +21,21 @@
     
 }
 
-.menu-nav_item{
+.menu-nav{
+
+    &__item{
     display: inline-block;
     padding: 0px 20px;
-}
-
-.menu-nav_link{
+    }
+    
+    &__link{
     transition: all 0.3s ease 0s;
+    }
+    &__link:hover{
+        color:$secondary-color;  
+    }
 }
 
-.menu-nav_link:hover{
-    color:$secondary-color;
-}
 
 .btn__login{
     padding: 9px 25px;
@@ -51,20 +57,21 @@
 // Dlaczego po najechaniu przycisku btn Login on tak dziwnie skacze?
 
 .section-hero{
-    
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
-    padding: 5rem 10%;
     margin: 0 auto;
+    column-gap: 2rem;
+    padding: 2rem;
     
 }
 
 .heading{
-    width: 50%;
+    
 
     &__title{
-        width: 60%;
+        
     }
     &__description{
         color:$primary-text-color;
@@ -85,7 +92,7 @@
     // dlaczego to nie zadziałało ????
 }
 
-.btn{
+.btn {
     padding: 9px 5px;
     color: #fff;
     border-radius: 5px;
@@ -93,6 +100,10 @@
     transition: all 0.3s ease 0s;
     font-size: 0.9rem;
     text-align: center;
+}
+.hero-img{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .heading-buttons-Chrome{
@@ -102,8 +113,23 @@
         height:50px;  
 }
 .heading-buttons-Firefox{
-    background-color: $primary-text-color;  
-    color: $primary-bgc-color;
-    width: 166px;
-    height:50px;
+        background-color: $primary-text-color;  
+        color: $primary-bgc-color;
+        width: 166px;
+        height:50px;
 }
+
+
+
+// .section-hero::after{
+//     content: ""; 
+//     position: absolute;
+//     bottom: 400px;
+//     right: -350px;
+//     width: 50%;
+//     height: 30%;
+//     border-radius: 35%;
+//     background-color: $primary-btn-color;
+//     opacity: .7; 
+//     z-index: -1;
+// }
