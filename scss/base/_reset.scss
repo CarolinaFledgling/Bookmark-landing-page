@@ -18,7 +18,9 @@ a {
 }
 
 p{
-    margin:0;
+	margin:0;
+	font-size: 1.2rem;
+	color: $primary-text-color;
 }
 
 img, li, ::before, ::after{
@@ -42,3 +44,13 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+h1{
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 2.5rem;
+}
+
+
