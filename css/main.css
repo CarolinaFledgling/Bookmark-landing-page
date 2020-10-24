@@ -502,14 +502,14 @@ ul {
           justify-content: flex-end;
 }
 
-.heading-buttons-Chrome {
+.heading-buttons__Chrome {
   background-color: #5368df;
   margin-right: 1rem;
   width: 166px;
   height: 50px;
 }
 
-.heading-buttons-Firefox {
+.heading-buttons__Firefox {
   background-color: #9194a1;
   color: #252b46;
   width: 166px;
