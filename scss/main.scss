@@ -12,10 +12,13 @@
 @import"modules/_main-container";
 @import"modules/_header";
 @import"modules/_feature";
+@import"modules/_download";
 
 
 //  Pytania 
 
-// 1. Jak zrobić aby ten overlay był na szerokość dłuższy niż cały container?
-// 2. Transition na guzikach btn dziwnie zmienia hover , nie ma płynności ?
+// 1. Problem z overlay ( ten niebieski kawałek za zdjeciami) nie umiem ustawic na szerokość dłuższą niż container. ?
+// 2. Transition na guzikach btn dziwnie zmienia hover, nie ma płynności ?
 // 3. Czy tworząc layout strony jest sens, dla całego projektu stworzyć div. container i jemu tworzyć css grid z podziałem na grid-template-areas, czy ma to sens jeśli później i tak każda sekcje rozmieszczasz za pomoca flexa lub grida ?
+// 4. W pliku modules jest plik main -container, w którym chciałam stworzyć layout całej strony , Czy ma to sens?
+// 5. Czy button, a linki (a) są na tej stronie dobrze rozpisane ? zawsze sie mylę kiedy button a kiedy link? 
