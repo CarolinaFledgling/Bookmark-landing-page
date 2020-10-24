@@ -389,10 +389,6 @@ ul {
   padding: 0;
 }
 
-.section-hero > {
-  position: relative;
-}
-
 .header {
   height: 100%;
   width: 100%;
@@ -432,23 +428,25 @@ ul {
 }
 
 .btn__login {
-  padding: 9px 25px;
-  background-color: #fa5757;
-  color: #fff;
+  padding: 9px 5px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
           box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 9px 25px;
+  background-color: #fa5757;
+  color: #fff;
   width: 115px;
   height: 40px;
-  text-align: center;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .btn__login:hover {
   background-color: #fff;
-  color: #9194a1;
-  border: 1px solid #fa5757;
+  color: #252b46;
+  border: 2px solid #fa5757;
 }
 
 .section-hero {
@@ -468,6 +466,10 @@ ul {
   padding: 2rem;
 }
 
+.heading__title {
+  width: 60%;
+}
+
 .heading__description {
   color: #9194a1;
   margin: 2.2rem 0;
@@ -481,16 +483,31 @@ ul {
   display: flex;
 }
 
-.btn {
+.heading-buttons__Chrome {
   padding: 9px 5px;
-  color: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
           box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   font-size: 0.9rem;
   text-align: center;
+  color: #fff;
+  background-color: #5368df;
+  margin-right: 1rem;
+  width: 166px;
+  height: 50px;
+}
+
+.heading-buttons__Firefox {
+  padding: 9px 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
+          box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: #eaecf5;
+  color: #252b46;
+  width: 166px;
+  height: 50px;
 }
 
 .hero-img {
@@ -500,20 +517,6 @@ ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-.heading-buttons__Chrome {
-  background-color: #5368df;
-  margin-right: 1rem;
-  width: 166px;
-  height: 50px;
-}
-
-.heading-buttons__Firefox {
-  background-color: #9194a1;
-  color: #252b46;
-  width: 166px;
-  height: 50px;
 }
 
 .container {
