@@ -30,6 +30,10 @@
     display: flex;
     justify-content: space-around;
     max-width: 1440px;
+    flex-wrap: wrap;
+    margin: 1rem;
+    position: relative;
+  
     
   
 }
@@ -39,11 +43,13 @@
     padding: 2rem 0 1rem 0;
     border-radius: 15px;
     box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
+    height: min-content;
 
     //kontener GRID
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin:1rem;
 
     
     
@@ -81,9 +87,9 @@
         
 
         &:hover{
-            background-color:white;
+            background-color:$white;
             color:$light-blue;
-            border: 2px solid $light-blue;
+            border: 1px solid $light-blue;
         }
 
     }
@@ -98,12 +104,11 @@
 
 }
 
-// .card-Firefox{
-//     margin-top: 1rem;
-    
-// }
+.card-Firefox{
+    margin-top: 3rem;  
+}
 
-// .card-Opera{
-//     margin-top: 2rem;
-// }
+.card-Opera{
+    margin-top: 4rem;
+}
 

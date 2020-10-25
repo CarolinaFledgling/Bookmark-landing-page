@@ -13,13 +13,16 @@
 @import"modules/_header";
 @import"modules/_feature";
 @import"modules/_download";
+@import"modules/_questions";
 
 
 //  Pytania 
 
-// 1. Problem z overlay ( ten niebieski kawałek za zdjęciami ilust.) nie umiem ustawic na szerokość dłuższą niż container. ?
+// 1. Problem z overlay ( ten niebieski kawałek za zdjęciami ilust.) czy on może tak być ?
 // 2. Transition na guzikach btn dziwnie zmienia hover, nie ma płynności ?
 // 3. Czy tworząc layout strony jest sens, dla całego projektu stworzyć div. container i jemu tworzyć css grid z podziałem na grid-template-areas, czy ma to sens jeśli później i tak każda sekcje rozmieszczasz za pomoca flexa lub grida ?
-// 4. W pliku modules jest plik main -container, w którym chciałam stworzyć layout całej strony , Czy ma to sens?
+// 4. W pliku modules jest plik main -container, w którym chciałam stworzyć layout całej strony, nie rozumiem na ile kolumn podzielic ten projekt ( w internecie sa tylko przykłady z łatwymi layoutami)?
 // 5. Czy button, a linki (a) są na tej stronie dobrze rozpisane ? zawsze sie mylę kiedy button a kiedy link? 
-// 6. W sekcji download , guziki po najechaniu zwiększaja całą karte ?dlaczego ? jak to naprawić 
+// 6. Sekcja download: po najechaniu na guzik zwieksza on wysokosc lekko karty przez 1px bordera - czy mozna to jakos zatrzymac?
+// 7. Jak obniżyć karty  w skecji download tak jak jest w w gotowym projekcie ? zastosowany margin skraca tylko kartę , próba zrobienia to za pomocą position też nie działa :(? , pomogło ustawienie height: min-content, ale dlaczego było trzeba to ustawić ? 
+// 8. Transition po najechaniu na guziki , dziwnie działa ?? nie ma płynności dlaczego ?
