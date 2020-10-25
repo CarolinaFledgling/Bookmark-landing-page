@@ -63,4 +63,16 @@ h3{
 	margin:0;
 }
 
+// icon
+
+.fab{
+	font-size: 1.5rem;
+	color: $white;
+	transition: color 0.3s;
+}
+
+.fab:hover{
+	color:$light-pink; 
+}
+
 

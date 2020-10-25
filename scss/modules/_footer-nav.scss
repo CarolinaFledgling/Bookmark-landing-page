@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     &_logo{
+        cursor: pointer;
         margin-right: 1rem;
     }
 }
@@ -36,14 +37,6 @@
 }
 
 .footer-socials{
-    
-    &__link{
-        
-        transition: color 0.3s;
-    &:hover{
-        color:$light-pink;  
-     }
-    }
     &__link--fb{
         margin-right: 1rem;
     }
