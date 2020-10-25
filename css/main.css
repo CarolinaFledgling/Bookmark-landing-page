@@ -406,6 +406,7 @@ h2 {
 }
 
 h3 {
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -417,8 +418,8 @@ h3 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto 1fr auto auto 100px 50px;
-      grid-template-rows: auto auto 1fr auto auto 100px 50px;
+  -ms-grid-rows: auto auto 1fr auto 400px 100px 50px;
+      grid-template-rows: auto auto 1fr auto 400px 100px 50px;
       grid-template-areas: "header header" "feature feature" "service service" "questions questions" "wrapper-contact wrapper-contact" "footer-nav footer-nav" "footer footer";
   overflow: hidden;
 }
@@ -949,7 +950,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .question-header {
@@ -1054,5 +1055,91 @@ img {
 .accordion__item:target .accordion__answer {
   max-height: 20rem;
   visibility: visible;
+}
+
+.wrapper-contact {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3e52a3;
+}
+
+.contact {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__confirmed {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.contact__title {
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.contact-info__input {
+  width: 20%;
+  color: #252b46;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.contact-info__btn {
+  padding: 9px 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
+          box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.32);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 15px 45px;
+  background-color: #fa5757;
+  color: #fff;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  margin-left: 0.5rem;
+}
+
+.contact-info__btn:hover {
+  background-color: #fff;
+  color: #fa5757;
+  border: 1px solid #fa5757;
 }
 /*# sourceMappingURL=main.css.map */

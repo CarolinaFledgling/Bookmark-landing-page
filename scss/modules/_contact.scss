@@ -1,0 +1,60 @@
+.wrapper-contact{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $blue;
+   
+}
+
+.contact{
+    // jak ustawić aby napis stay up- to.. był dokładnie na środku ?
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__confirmed{
+        color:$white;
+        margin-bottom: 2rem;
+    }
+    &__title{
+        color:$white;
+        width: 80%;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+     &__input{
+        //  czy mozn atak określić szerokośc inputa na 20 % ?
+        width: 20%;
+        color:$primary-heading-color;
+        border-radius: 5px;
+        border:none;
+        padding: 5px;
+        font-size: 0.8rem;
+        
+    }
+    &__btn{
+        @include btn;
+        padding: 15px 45px;
+        background-color: $light-pink;
+        color:$white;
+        transition: all 0.1s linear;
+        margin-left: 0.5rem;
+    
+    &:hover{
+        background-color:$white;
+        color: $light-pink;
+        border: 1px solid $light-pink;
+      }
+    }
+}
