@@ -24,6 +24,9 @@ a {
 	@include breakpoint-responsive('xl'){
 		font-size: 0.9rem;
 	}
+	@include breakpoint-responsive('md'){
+		font-size: 0.8rem;
+	}
 }
 
 p{
