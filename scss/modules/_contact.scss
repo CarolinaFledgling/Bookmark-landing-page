@@ -31,7 +31,14 @@
 .contact-info{
     display: flex;
     justify-content: center;
+    
     width: 100%;
+   
+    @include breakpoint-responsive('md'){
+        flex-direction: column;
+        align-items: center;
+        
+    }
 
      &__input{
         //  czy mozn atak określić szerokośc inputa na 20 % ?
@@ -41,6 +48,11 @@
         border:none;
         padding: 5px 5px 5px 15px;
         font-size: 0.8rem;
+        @include breakpoint-responsive('md'){
+            margin-bottom: 1rem;
+            width: 50%;
+            padding: 1rem;
+        }
     }
 
  
@@ -51,6 +63,11 @@
         color:$white;
         transition: all 0.1s linear;
         margin-left: 0.5rem;
+        @include breakpoint-responsive('md'){
+            width: 50%;
+            padding: 1rem;
+            margin: 0;
+        }
     
     &:hover{
         background-color:$white;

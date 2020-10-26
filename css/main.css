@@ -1446,6 +1446,18 @@ img {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .contact-info__input {
   width: 20%;
   color: #252b46;
@@ -1453,6 +1465,14 @@ img {
   border: none;
   padding: 5px 5px 5px 15px;
   font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .contact-info__input {
+    margin-bottom: 1rem;
+    width: 50%;
+    padding: 1rem;
+  }
 }
 
 .contact-info__btn {
@@ -1473,6 +1493,14 @@ img {
 @media (max-width: 768px) {
   .contact-info__btn {
     padding: 13px 23px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info__btn {
+    width: 50%;
+    padding: 1rem;
+    margin: 0;
   }
 }
 
