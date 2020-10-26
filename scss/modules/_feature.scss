@@ -4,7 +4,11 @@
     grid-template-rows: minmax(300px, 1fr) auto;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 0 auto;
+    padding: 1rem;
+    @include breakpoint-responsive('md'){
+        padding: 0.5rem;
+    }
 }
 
 .features{
@@ -129,8 +133,6 @@
     align-items: center;
     margin: 0 auto;
     column-gap: 2rem;
-    padding: 2rem;
-    // margin: 2rem 0;  
     @include breakpoint-responsive('md'){
 		grid-template-columns:1fr;
         grid-template-rows: auto auto;
@@ -164,8 +166,7 @@
             color:$white;
             background-color: $light-blue;
             margin-right: 1rem;
-            width: 166px;
-            height:50px;
+           
             transition: all 0.3s linear;
     
             &:hover{

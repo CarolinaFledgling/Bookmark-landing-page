@@ -1,5 +1,6 @@
 .header {
-    // jaka tu ustawić wysokość ????? 100%vh?
+    // nie wiem jaką wysokość tutaj dać ?
+    // height: 90vh;
     width: 100%;
     margin: 0 auto;
     display: grid;  
@@ -7,19 +8,29 @@
     grid-template-rows: 100px 1fr;
     justify-content: center;
     align-items: center;
+    @include breakpoint-responsive('md'){
+        // height: 100vh;
+    }
+
+   
    
 // Navigation style
 .main-header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding:2rem;
-
+    padding:1rem;
+    
     &__logo{
     cursor: pointer;
     margin-right: auto;
     }
     
+}
+.nav{
+    @include breakpoint-responsive('md'){
+        display: none;
+    }
 }
 
 .menu-nav{
@@ -48,6 +59,9 @@
     width: 115px;
     height: 40px;
     transition: all 0.1s linear;
+    @include breakpoint-responsive('md'){
+        display: none;
+    }
 }
 
 .btn__login:hover{
@@ -67,8 +81,14 @@
     align-items: center;
     margin: 0 auto;
     column-gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     margin: 2rem 0;
+    @include breakpoint-responsive('md'){
+        grid-template-columns: 1fr;
+
+        padding: 0.5rem;
+    }
+
 
     // image overlay blue
     
@@ -82,9 +102,6 @@
 
 
 .heading{ 
-    
-    
-    
     &__title{
     width:100%;
     
@@ -92,6 +109,7 @@
         margin-top: 1.5rem;
         text-align: center;
         margin: 1.5rem auto;
+        width: 70%;
     }
     }
     &__description{
@@ -103,6 +121,7 @@
     @include breakpoint-responsive('md'){
         margin:0 auto;
         text-align: center;
+        width: 60%;
 
     }
     }   
@@ -134,6 +153,12 @@
             color:$light-blue;
             border: 2px solid $light-blue;
         }
+        @include breakpoint-responsive('md'){
+            padding: 13px 20px;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+           
+        }
     }
     &__Firefox {
         @include btn;
@@ -145,6 +170,12 @@
             background-color:white;
             color:$primary-heading-color;
             border: 2px solid $primary-heading-color;
+        }
+
+        @include breakpoint-responsive('md'){
+            padding: 13px 20px;
+            font-size: 0.8rem;
+           
         }
     }
 
