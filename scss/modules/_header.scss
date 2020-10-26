@@ -91,6 +91,12 @@
     
     &__title{
     width:100%;
+    
+    @include breakpoint-responsive('md'){
+        margin-top: 1.5rem;
+        width: 80%;
+        margin: 1.5rem auto;
+    }
     }
     &__description{
         color:$primary-text-color;
@@ -155,6 +161,9 @@
 
 }
 
+
+//  IMAGE style + blue overlay
+
 .hero-img {
     display: flex;
     justify-content: center;
@@ -182,7 +191,7 @@
         content: ""; 
         position: absolute;
         top: 40%;
-        right: 4%;
+        right: 0%;
         width: 50%;
         height: 80%;
         border-radius: 0 0 0 40%;
