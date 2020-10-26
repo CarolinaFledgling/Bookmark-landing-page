@@ -6,32 +6,57 @@
 
 //Próba z wszystkimi pytaniami 
 
-// const questions = document.querySelectorAll('.accordion__item')
-// //  zwraca nam kolekcje elementów 
+const questions = document.querySelectorAll('.accordion__item')
+//  zwraca nam kolekcje elementów 
+const arrowRemove = document.querySelector('.arrow-remove')
+const arrowAdd = document.querySelector('.arrow-add')
+const answer = document.querySelector('.accordion__answer')
 
-// questions.forEach(item =>{
-//     item.addEventListener('click', openAccordion);
-// })
 
-// function openAccordion(e){
-    
-// }
+// PRÓBA Z WSZYTKIMI PYTANIAMI 
+
+// questions.forEach(item => {
+//             item.addEventListener('click', openAccordion);
+
+
+//             function openAccordion(event) {
+//                 let isClicking = item.contains(event.target)
+//                 if (isClicking) {
+//                     answer.classList.add('show-accordion')
+//                     arrowRemove.style.display = "block"
+//                     arrowAdd.style.display = "none"
+
+//                 }
+//             }
+//      })
 
 
 //  próba z jednym pytaniem 
 
 const question1 = document.getElementById('question1');
-const arrowRemove = document.querySelector('.arrow-remove')
-const answer =document.querySelector('.accordion__answer')
+
 
 question1.addEventListener('click', openAccordion)
 
-function openAccordion(event){
+function openAccordion(event) {
     let isClicking = question1.contains(event.target)
-    if(isClicking){
+    if (isClicking) {
         answer.classList.toggle('show-accordion')
     }
 
+    if (answer.classList.contains('show-accordion')) {
+        arrowRemove.style.display = "block"
+        arrowAdd.style.display = "none"
+    } else {
+        arrowRemove.style.display = "none"
+        arrowAdd.style.display = "block"
+    }
+
+
+
 }
 
-openAccordion()
+
+
+
+// Hambuger menu 

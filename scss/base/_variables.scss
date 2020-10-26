@@ -17,32 +17,18 @@ $white:#fff;
 $primary-text-color:hsl(229, 8%, 60%);
 $primary-heading-color:hsl(229, 31%, 21%);
 
-
-
-
-
-
-
-
-
-
-// Breakpoints
-
-
 $font-weights: ("regular": 400, "medium": 500);
 
 
-
-
 // BREAKPOINTS
-// $breakpoints: (
-//   'xs':'375px'
-//   'sm': '576px',
-//   'md': '768px',
-//   'lg': '992px',
-//   'xl': '1200px'
-//   'xxl': '1440px'
-// );
+$breakpoints: (
+  'xs':'375px',
+  'sm': '576px',
+  'md': '768px',
+  'lg': '1096px',
+  'xl': '1200px',
+  'xxl': '1440px',
+);
 
 
 // ## Layout

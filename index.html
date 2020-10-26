@@ -13,9 +13,11 @@
     <div class="container">
         <header class="header" id="header">
             <div class="main-header">
-                <div class="menu-btn">
-                    <span class="menu-btn__burger"></span>
-                </div>
+                <button class="menu-btn">
+                    <span class="menu-btn__box">
+                        <span class="menu-btn__inner"></span>
+                    </span>
+                </button>
 
                 <img class="logo main-header__logo" src="images/logo-bookmark.svg" alt="Logo">
 
@@ -23,15 +25,16 @@
                 <nav class="nav">
                     <ul class="menu-nav">
                         <li class="menu-nav__item">
-                            <a href="features.html" class="menu-nav__link">Features</a>
+                            <a href="#feature" class="menu-nav__link">Features</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="pricing.html" class="menu-nav__link">Pricing</a>
+                            <a href="#service" class="menu-nav__link">Pricing</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="contact.html" class="menu-nav__link">Contact</a>
+                            <a href="#wrapper-contact" class="menu-nav__link">Contact</a>
                         </li>
                     </ul>
+            
                 </nav>
 
                 <a href="#" class="cta"><button class="btn__login">Login</button></a>
@@ -140,7 +143,7 @@
                     <div class="accordion__item" id="question1">
                         <a class="accordion__link" href="#question1">What is Bookmark?
                             <img class="arrow-add" src="images/icon-arrow.svg" alt="arrow">
-                            <img class="arrow-remove" src="images/icon-arrow red.svg" alt="arrow">
+                            <img class="arrow-remove" src="images/arrow-red-up.svg" alt="arrow">
                         </a>
                         <div class="accordion__answer">
                             <p class="accordion__paragraph">
@@ -152,7 +155,7 @@
                     <div class="accordion__item" id="question2">
                         <a class="accordion__link" href="#question2">How can I request a new browser?
                             <img class="arrow-add" src="images/icon-arrow.svg" alt="arrow">
-                            <img class="arrow-remove" src="images/icon-arrow red.svg" alt="arrow">
+                            <img class="arrow-remove" src="images/arrow-red-up.svg" alt="arrow">
                         </a>
                         <div class="accordion__answer">
                             <p class="accordion__paragraph">
@@ -168,7 +171,7 @@
                     <div class="accordion__item" id="question3">
                         <a class="accordion__link" href="#question3">Is there a mobile app?
                             <img class="arrow-add" src="images/icon-arrow.svg" alt="arrow">
-                            <img class="arrow-remove" src="images/icon-arrow red.svg" alt="arrow">
+                            <img class="arrow-remove" src="images/arrow-red-up.svg" alt="arrow">
                         </a>
                         <div class="accordion__answer">
                             <p class="accordion__paragraph">
@@ -182,7 +185,7 @@
                     <div class="accordion__item" id="question4">
                         <a class="accordion__link" href="#question4">What about other Chromium browsers?
                             <img class="arrow-add" src="images/icon-arrow.svg" alt="arrow">
-                            <img class="arrow-remove" src="images/icon-arrow red.svg" alt="arrow">
+                            <img class="arrow-remove" src="images/arrow-red-up.svg" alt="arrow">
                         </a>
                         <div class="accordion__answer">
                             <p class="accordion__paragraph">
@@ -208,7 +211,7 @@
             </div>
             <div class="contact-info">
                 <label class="contact-info__label" for="email"></label>
-                <input class="contact-info__input" type="email" id="email" name="email" placeholder="Enter your email:">
+                <input class="contact-info__input" type="email" id="email" name="email" placeholder="Enter your email address:">
                 <button class="contact-info__btn">Contact Us</button>
             </div>
 

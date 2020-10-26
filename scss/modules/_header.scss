@@ -60,7 +60,6 @@
 
 //  Section hero style
 .section-hero {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -72,23 +71,24 @@
     margin: 2rem 0;
 
     // image overlay blue
-    &::after{
-        content: ""; 
-        position: absolute;
-        bottom: -100px;
-        right: -5%;
-        width: 40%;
-        height: 80%;
-        border-radius: 0 0 0 40%;
-        background-color: $light-blue;
-        opacity: .7; 
-        z-index: -1;
-}
     
+
+    // Responsive 
+    @include breakpoint-responsive('md'){
+		grid-template-columns:1fr;
+        grid-template-rows: auto auto;
+
+        &::after{
+          display: none;
+        }
+	}
 }
 
 
-.heading{  
+.heading{ 
+    
+    
+    
     &__title{
     width:100%;
     }
@@ -97,7 +97,22 @@
         margin: 2.2rem 0;
         width: 88%;
         line-height: 1.7rem;
-    }    
+        // Responsive 
+    @include breakpoint-responsive('md'){
+        width: 50%;
+        margin:0 auto;
+
+    }
+    }   
+
+    // Responsive 
+    @include breakpoint-responsive('md'){
+        grid-row: 2 / 3;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    
 }
 
 // buttons style 
@@ -110,8 +125,6 @@
         color:$white;
         background-color: $light-blue;
         margin-right: 1rem;
-        width: 166px;
-        height:50px;
         transition: all 0.3s linear;
 
         &:hover{
@@ -124,8 +137,6 @@
         @include btn;
         background-color: $light-grey;  
         color: $primary-heading-color;
-        width: 166px;
-        height:50px;
         transition: all 0.1s linear;
         // zapytac sie jak zrobic żeby było to bardziej płynne ????
         &:hover{
@@ -134,13 +145,60 @@
             border: 2px solid $primary-heading-color;
         }
     }
-}
 
-
-    .hero-img {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        // Responsive 
+        @include breakpoint-responsive('md'){
+            justify-content: center;
+            margin-top: 1rem;
+        }
     }
 
-} 
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+
+    // image overlay blue
+    &::after{
+        content: ""; 
+        position: absolute;
+        bottom: -100px;
+        right: -5%;
+        width: 60%;
+        height: 80%;
+        border-radius: 0 0 0 40%;
+        background-color: $light-blue;
+        opacity: .7; 
+        z-index: -1;
+    }
+
+     // Responsive 
+    @include breakpoint-responsive('md'){
+    grid-row: 1 / 2;
+    &::after{
+        content: ""; 
+        position: absolute;
+        top: 40%;
+        right: 4%;
+        width: 50%;
+        height: 80%;
+        border-radius: 0 0 0 40%;
+        background-color: $light-blue;
+        opacity: .7; 
+        z-index: -1;
+    }
+
+    
+    }
+
+    &__ilust-1{
+    
+    @include breakpoint-responsive('md'){
+        width: 50%;
+        }
+    }
+
+}

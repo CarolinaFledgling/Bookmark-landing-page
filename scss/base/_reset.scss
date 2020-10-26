@@ -20,12 +20,24 @@ a {
 	&:hover{
 		color: $light-pink;
 	}
+
+	@include breakpoint-responsive('xl'){
+		font-size: 0.9rem;
+	}
 }
 
 p{
 	margin:0;
 	font-size: 1.2rem;
 	color: $primary-text-color;
+	// Responsive 
+	@include breakpoint-responsive('xl'){
+		font-size: 1rem;
+	}
+
+	@include breakpoint-responsive('md'){
+		font-size: 0.8rem;
+	}
 }
 
 img, li, ::before, ::after{
@@ -52,15 +64,36 @@ ul {
 
 h1{
 	font-size: 3rem;
+	// Responsive 
+	@include breakpoint-responsive('xl'){
+		font-size: 2.3rem;
+	}
+
+	@include breakpoint-responsive('md'){
+		font-size: 1.6rem;
+	}
 }
 
 h2{
 	font-size: 2.5rem;
+	@include breakpoint-responsive('xl'){
+		font-size: 2rem;
+	}
+	@include breakpoint-responsive('md'){
+		font-size: 1.6rem;
+	}
 }
 
 h3{
 	font-size: 2rem;
 	margin:0;
+	@include breakpoint-responsive('xl'){
+		font-size: 1.5rem;
+	}
+
+	@include breakpoint-responsive('md'){
+		font-size: 1.3rem;
+	}
 }
 
 // icon
