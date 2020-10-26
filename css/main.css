@@ -1063,7 +1063,7 @@ img {
   display: none;
 }
 
-.accordion__item:target .accordion__answer {
+.show-accordion {
   max-height: 20rem;
   visibility: visible;
 }

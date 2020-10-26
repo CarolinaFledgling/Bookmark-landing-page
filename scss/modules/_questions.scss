@@ -91,9 +91,9 @@ img{
     display: none;
 }
 
-//  Add clicking to show answer 
+//  For Java script 
 
-.accordion__item:target .accordion__answer{
+.show-accordion{
     max-height: 20rem;
     visibility: visible;
 }
