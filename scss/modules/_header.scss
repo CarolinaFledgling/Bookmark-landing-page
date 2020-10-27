@@ -13,65 +13,6 @@
     }
 
    
-   
-// Navigation style
-.main-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding:1rem;
-    
-    &__logo{
-    cursor: pointer;
-    margin-right: auto;
-    }
-    
-}
-.nav{
-    @include breakpoint-responsive('md'){
-        display: none;
-    }
-}
-
-.menu-nav{
-
-    &__item{
-    display: inline-block;
-    padding: 0px 20px;
-    }
-    
-    &__link{
-    transition: all 0.3s ease 0s;
-    text-transform: uppercase;
-    margin-right: 1rem;
-    }
-    &__link:hover{
-        color:$light-pink;  
-    }
-}
-
-
-.btn__login{
-    @include btn;
-    padding: 9px 25px;
-    background-color: $light-pink;
-    color:$white;
-    width: 115px;
-    height: 40px;
-    transition: all 0.1s linear;
-    @include breakpoint-responsive('md'){
-        display: none;
-    }
-}
-
-.btn__login:hover{
-    background-color:$white;
-    color: $light-pink;
-    border: 2px solid $light-pink;
-}
-
-
-
 //  Section hero style
 .section-hero {
     display: grid;
@@ -88,10 +29,6 @@
 
         padding: 0.5rem;
     }
-
-
-    // image overlay blue
-    
 
     // Responsive 
     @include breakpoint-responsive('md'){

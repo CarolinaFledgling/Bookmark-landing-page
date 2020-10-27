@@ -12,22 +12,13 @@
 <body>
     <div class="container">
         <header class="header" id="header">
-            <div class="main-header">
-                <!-- <button class="menu-btn">
-                    <span class="menu-btn__box">
-                        <span class="menu-btn__inner"></span>
-                    </span>
-                </button> -->
-
-                <div class="menu-btn">
+            <!-- <div class="main-header">
+                <div tabindex="1" class="menu-btn">
                     <div class="btn-line"></div>
                     <div class="btn-line"></div>
                     <div class="btn-line"></div>
                 </div>
-
-                <img class="logo main-header__logo" src="images/logo-bookmark.svg" alt="Logo">
-
-                <!-- NAVIGATION -->
+                <a href="index.html" class="main-header__logo-link"><img class="logo main-header__logo" src="images/logo-bookmark.svg" alt="Logo"></a>
                 <nav class="nav">
                     <ul class="menu-nav">
                         <li class="menu-nav__item">
@@ -40,12 +31,35 @@
                             <a href="#wrapper-contact" class="menu-nav__link">Contact</a>
                         </li>
                     </ul>
-
                 </nav>
-
                 <a href="#" class="cta"><button class="btn__login">Login</button></a>
-                <!-- Czy login powinnien być linkiem czy Buttonem ? -->
-            </div>
+            </div> -->
+
+
+            <nav class="navbar">
+                <!-- tabindex="1" -->
+                <div class="menu-btn">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>
+                <a href="index.html" class="logo"><img class="main-header__logo" src="images/logo-bookmark.svg" alt="Logo"></a>
+                <ul class="main-nav">
+                    <li class="menu-nav__item">
+                        <a href="#feature" class="menu-nav__link">Features</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="#service" class="menu-nav__link">Pricing</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="#wrapper-contact" class="menu-nav__link">Contact</a>
+                    </li>
+                    <!-- <a href="#" class="cta"><button class="btn__login">Login</button></a> -->
+                    <button class="btn__login">Login</button>
+                    <!-- czy to powinno byc linkiem czy guzikiem  -->
+                </ul>
+            </nav>
+            <!-- SECTION 2 HEADER -->
             <section class="section-hero">
                 <div class="heading">
                     <h1 class="heading__title">A Simple Bookmark Manager</h1>
