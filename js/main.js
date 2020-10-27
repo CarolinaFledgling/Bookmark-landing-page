@@ -62,31 +62,13 @@ function openAccordion(event) {
 // Hambuger menu 
 
 const menuBtn = document.querySelector('.menu-btn')
-const navList = document.querySelector('.menu-nav')
-const navItems = document.querySelectorAll('.menu-nav__item')
-const nav = document.querySelector('.nav')
-
-// Set the ovelay state of menu, true = open menu , false = close menu 
-
-let showMenu = false;
+const navBarLinks = document.querySelector('.navbar-links')
 
 menuBtn.addEventListener('click', toggleMenu)
 
 function toggleMenu() {
-    // musimy sprawidzić stan menu ,nie jest właczony overlay
-    if (!showMenu) {
-        menuBtn.classList.add('close')
-        navList.classList.add('close')
-        nav.classList.add('close')
-        navItems.forEach(item => item.classList.add('show'))
+menuBtn.classList.toggle('close')
+navBarLinks.classList.toggle('active')
 
-        showMenu = true;
-    } else {
-        menuBtn.classList.remove('close')
-        navList.classList.remove('close')
-        nav.classList.remove('close')
-        navItems.forEach(item => item.classList.remove('show'))
 
-        showMenu = false;
-    }
 }

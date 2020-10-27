@@ -1,22 +1,68 @@
   
 .navbar{
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  
+   
+   
+    @include breakpoint-responsive('md'){
+        flex-direction: column;
+        align-items: flex-start; 
+    }  
 }
 
+.navbar-links{
+    width: 100%;
+    height: 100%;
+    @include breakpoint-responsive('md'){
+        display: none;
+        width: 100%;
+        
+        
+    }
+}
 
+.active{
+    display: flex;
+}
 
-.menu-nav{
-    
-    &__item{
+.main-navTop{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  
+    @include breakpoint-responsive('md'){
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        background: darken($blue,5);
+        opacity: 0.9;
+    }
+
+    &__itemTop{  
+     margin-right: 1rem;
      padding: 0px 20px;
+     @include breakpoint-responsive('md'){
+         text-align: center;
+     }
     }
     
-    &__link{
+    &__linkTop{
     transition: all 0.3s ease 0s;
     text-transform: uppercase;
     margin-right: 1rem;
+    @include breakpoint-responsive('md'){
+       
+    }
     }
     &__link:hover{
         color:$light-pink;  
@@ -25,8 +71,9 @@
 
 
 
+
 .btn__login{
-    display: inline-block;
+         display: inline-block;
         @include btn;
         padding: 9px 25px;
         background-color: $light-pink;
@@ -34,9 +81,8 @@
         width: 115px;
         height: 40px;
         transition: all 0.1s linear;
-        @include breakpoint-responsive('md'){
-            // display: none;
-        }
+        margin: 0;
+        
     }
     
     .btn__login:hover{
@@ -44,3 +90,15 @@
         color: $light-pink;
         border: 2px solid $light-pink;
     }
+
+    .logo{
+        display: inline-block;
+        @include breakpoint-responsive('md'){
+        position: absolute;
+        z-index: 3;
+        left:10%;
+        top:40px;
+        }
+    }
+
+    
