@@ -5,12 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 2rem;
   
    
    
     @include breakpoint-responsive('md'){
         flex-direction: column;
         align-items: flex-start; 
+        padding: 0;
     }  
 }
 
@@ -72,24 +74,6 @@
 
 
 
-.btn__login{
-         display: inline-block;
-        @include btn;
-        padding: 9px 25px;
-        background-color: $light-pink;
-        color:$white;
-        width: 115px;
-        height: 40px;
-        transition: all 0.1s linear;
-        margin: 0;
-        
-    }
-    
-    .btn__login:hover{
-        background-color:$white;
-        color: $light-pink;
-        border: 2px solid $light-pink;
-    }
 
     .logo{
         display: inline-block;

@@ -159,28 +159,7 @@
                 width: 70%;
         
             }
-        }
-
-        &__btn{
-            @include btn;
-            color:$white;
-            background-color: $light-blue;
-            margin-right: 1rem;
-           
-            transition: all 0.3s linear;
-    
-            &:hover{
-                background-color:white;
-                color:$light-blue;
-                border: 2px solid $light-blue;
-            }
-
-             // Responsive 
-        @include breakpoint-responsive('md'){
-            margin: 0 auto;
-            margin-top: 1rem;
-        }
-        }
+        } 
 }
 
 //  IMAGE style + blue overlay

@@ -9,6 +9,7 @@
 
 // Modules
 @import"modules/_menu-btn";
+@import"modules/_btn-style";
 @import"modules/_top-nav";
 @import"modules/_main-container";
 @import"modules/_header";
@@ -22,7 +23,7 @@
 
 //  Pytania 
 
-// 1. Problem z overlay ( ten niebieski kawałek za zdjęciami ilust.) czy on może tak być ?
+// 1. Problem z overlay ( ten niebieski kawałek za zdjęciami ilust.) czy on może tak być ?//naprawione !
 // 2. Transition na guzikach btn dziwnie zmienia hover, nie ma płynności ?
 // 3. Czy tworząc layout strony jest sens, dla całego projektu stworzyć div. container i jemu tworzyć css grid z podziałem na grid-template-areas, czy ma to sens jeśli później i tak każda sekcje rozmieszczasz za pomoca flexa lub grida ?
 // 4. W pliku modules jest plik main -container, w którym chciałam stworzyć layout całej strony, nie rozumiem na ile kolumn podzielic ten projekt ( w internecie sa tylko przykłady z łatwymi layoutami)?
@@ -32,3 +33,10 @@
 // 8. Transition po najechaniu na guziki , dziwnie działa ?? nie ma płynności dlaczego ?
 // 9. section footer-nav , projekt zakladał zdjęcia SVG jako ikonki fb i twittera ale po najevhaniu na nie nie działa hover , dlaczego ? / aby rozwiązac ten problem zastosowalam icon z fontawesome 
 // 
+
+
+
+
+// 1. Jeśli chodzi o ten overlay niebieski który jest pod zdjęciem - zapomomniałam że to rozwiązywało problem scrolla na dole , jeśli damy twoje rozwiązanie, czyli usunięcie overflow: hidden; + zmiana right i width , to dostajemy scrolla na dole ;) 
+// 2. Zwiększenie  sekcji kontakt i footer na cała szerokość width -  jest to zablokowane przez ustawienie main-width na 1540px ( można to jakość obejść ? )
+// 3.

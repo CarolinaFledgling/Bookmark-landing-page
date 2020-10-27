@@ -78,23 +78,7 @@
         line-height: 1.7rem;
         padding: 0.5rem 0;
     }
-    &__btn{
-        @include btn;
-        color:$white;
-        background-color: $light-blue;
-        transition: all 0.3s linear;
-        margin: 0 auto;
-        padding: 15px 25px;
-        margin-top: 1rem;
-        
-
-        &:hover{
-            background-color:$white;
-            color:$light-blue;
-            border: 1px solid $light-blue;
-        }
-
-    }
+   
 }
 
 img{
