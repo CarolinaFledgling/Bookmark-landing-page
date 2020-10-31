@@ -139,6 +139,7 @@
 }
 
 .hero-details {
+  margin-top: 1rem;
   &__title {
     width: 100%;
     @include breakpoint-responsive("md") {
@@ -201,6 +202,14 @@
       background-color: $light-blue;
       opacity: 0.7;
       z-index: -1;
+    }
+  }
+  @include breakpoint-responsive("xs") {
+    &::after {
+      width: 40%;
+      height: 60%;
+      top: 60%;
+      left: 10%;
     }
   }
 
