@@ -1,35 +1,25 @@
 // Colors
 
-
-$navy-blue:hsl(233, 26%, 24%);
-$light-blue:#5368df;
-$blue:hsl(228, 45%, 44%);
-
-
-$light-pink:#fa5757;
-
-$light-grey:hsl(229, 35%, 94%);
-$white:#fff;
-
-
+$navy-blue: hsl(233, 26%, 24%);
+$light-blue: #5368df;
+$blue: hsl(228, 45%, 44%);
+$light-pink: #fa5757;
+$light-grey: hsl(229, 35%, 94%);
+$white: #fff;
 
 // Typogrphy colors
-$primary-text-color:hsl(229, 8%, 60%);
-$primary-heading-color:hsl(229, 31%, 21%);
-
-$font-weights: ("regular": 400, "medium": 500);
-
+$primary-text-color: hsl(229, 8%, 60%);
+$primary-heading-color: hsl(229, 31%, 21%);
 
 // BREAKPOINTS
 $breakpoints: (
-  'xs':'375px',
-  'sm': '576px',
-  'md': '768px',
-  'lg': '1096px',
-  'xl': '1200px',
-  'xxl': '1440px',
+  "xs": "375px",
+  "sm": "576px",
+  "md": "768px",
+  "lg": "1096px",
+  "xl": "1200px",
+  "xxl": "1440px",
 );
-
 
 // ## Layout
 

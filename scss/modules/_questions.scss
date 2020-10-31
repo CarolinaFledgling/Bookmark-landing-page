@@ -1,98 +1,101 @@
-.questions{
+.questions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  padding: 1rem;
+  @include breakpoint-responsive("md") {
+    padding: 0.5rem;
+    margin: 1rem auto;
+  }
+  @include breakpoint-responsive("xs") {
+    margin: 1rem auto;
+  }
+}
+
+.question-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    @include breakpoint-responsive("md") {
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    width: 50%;
+    line-height: 1.7rem;
+    padding: 1rem 0 0.5rem 0;
+    margin-bottom: 1rem;
+    @include breakpoint-responsive("md") {
+      width: 70%;
+    }
+  }
+}
+
+.question-wrapper {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 50%;
+  @include breakpoint-responsive("md") {
+    max-width: 75%;
+  }
+  @include breakpoint-responsive("xs") {
+    max-width: 60%;
+  }
+}
+
+// Accordions style
+
+.accordion {
+  &__item {
+    border-top: 1px solid $light-grey;
+    padding: 1rem 0;
+  }
+
+  &__link {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: $primary-heading-color;
+  }
+  &__answer {
+    max-height: 0;
+    visibility: hidden;
+    transition: max-height 0.6s;
+  }
+  &__paragraph {
+    color: $primary-text-color;
+    line-height: 1.7rem;
+    padding: 0.5rem 0;
+  }
+  &__btn {
     margin: 0 auto;
-    padding: 1rem;
-    @include breakpoint-responsive('md'){
-        padding: 0.5rem;
-    }
+  }
 }
 
-.question-header{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-
-    &__title{
-        text-align: center;
-        margin-bottom: 1rem;
-        @include breakpoint-responsive('md'){
-            width: 90%;
-            text-align: center;
-        }
-    }
-
-    &__description{
-        text-align: center;
-        width: 50%;
-        line-height: 1.7rem;
-        padding: 1rem 0 0.5rem 0;
-        margin-bottom: 1rem;
-        @include breakpoint-responsive('md'){
-            width: 70%;
-        }
-    }
+img {
+  display: inline-block;
 }
 
-.question-wrapper{
-    margin: 1rem auto;
-    width: 100%;
-    max-width: 50%;
-    @include breakpoint-responsive('md'){
-        max-width: 80%;
-    }
+.arrow-remove {
+  display: none;
 }
 
-// Accordions style 
+//  For Java script
 
-.accordion{
-    
-
-    &__item{
-        border-top: 1px solid $light-grey;
-        padding: 1rem 0;
-
-    
-    }
-
-    &__link{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 0;
-        color:$primary-heading-color;
-    }
-    &__answer{
-        max-height: 0;
-        visibility: hidden;
-        transition: max-height 0.6s;
-        
-    }
-    &__paragraph{
-        color:$primary-text-color;
-        line-height: 1.7rem;
-        padding: 0.5rem 0;
-    }
-   
+.show-accordion {
+  max-height: 20rem;
+  visibility: visible;
 }
-
-img{
-    display: inline-block;
-}
-
-.arrow-remove{
-    display: none;
-}
-
-//  For Java script 
-
-.show-accordion{
-    max-height: 20rem;
-    visibility: visible;
-}
-

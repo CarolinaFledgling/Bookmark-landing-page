@@ -1,114 +1,137 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-		scroll-behavior: smooth;
-		font-family: "Rubik", sans-serif;
-		font-size: 18px;
-	}
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
 
 a {
-    color:$primary-text-color;
-	text-decoration: none;
-	text-decoration: none;
-	font-weight: 400;
-	letter-spacing: 0.1rem;
-	transition: all 0.1s linear;
+  color: $primary-text-color;
+  text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  transition: all 0.1s linear;
 
-	&:hover{
-		color: $light-pink;
-	}
+  &:hover {
+    color: $light-pink;
+  }
 
-	@include breakpoint-responsive('xl'){
-		font-size: 0.9rem;
-	}
-	@include breakpoint-responsive('md'){
-		font-size: 0.8rem;
-	}
+  @include breakpoint-responsive("xl") {
+    font-size: 0.9rem;
+  }
+  @include breakpoint-responsive("md") {
+    font-size: 0.8rem;
+  }
+
+  @include breakpoint-responsive("xs") {
+    font-size: 0.6rem;
+  }
 }
 
-p{
-	margin:0;
-	font-size: 1.2rem;
-	color: $primary-text-color;
-	// Responsive 
-	@include breakpoint-responsive('xl'){
-		font-size: 1rem;
-	}
-
-	@include breakpoint-responsive('md'){
-		font-size: 0.8rem;
-	}
+img,
+li,
+::before,
+::after {
+  display: block;
 }
 
-img, li, ::before, ::after{
-	display: block;
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: inherit;
+  text-decoration: none;
+  text-align: center;
 }
-
-button{
-	display: block;
-    cursor: pointer;
-    border: none;
-    outline: none;
-	text-decoration: none;
-	font-family: inherit;
-	text-decoration: none;
-	text-align: center;
-}
-
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-h1{
-	font-size: 3rem;
-	// Responsive 
-	@include breakpoint-responsive('xl'){
-		font-size: 2.3rem;
-	}
+h1 {
+  font-size: 3rem;
 
-	@include breakpoint-responsive('md'){
-		font-size: 1.6rem;
-	}
+  // Responsive
+  @include breakpoint-responsive("xl") {
+    font-size: 2.3rem;
+  }
+
+  @include breakpoint-responsive("md") {
+    font-size: 1.6rem;
+  }
+
+  @include breakpoint-responsive("xs") {
+    font-size: 1.2rem;
+  }
 }
 
-h2{
-	font-size: 2.5rem;
-	@include breakpoint-responsive('xl'){
-		font-size: 2rem;
-	}
-	@include breakpoint-responsive('md'){
-		font-size: 1.6rem;
-	}
+h2 {
+  font-size: 2.5rem;
+
+  @include breakpoint-responsive("xl") {
+    font-size: 2rem;
+  }
+  @include breakpoint-responsive("md") {
+    font-size: 1.5rem;
+  }
+
+  @include breakpoint-responsive("xs") {
+    font-size: 1.1rem;
+  }
 }
 
-h3{
-	font-size: 2rem;
-	margin:0;
-	@include breakpoint-responsive('xl'){
-		font-size: 1.5rem;
-	}
+h3 {
+  font-size: 2rem;
+  margin: 0;
+  @include breakpoint-responsive("xl") {
+    font-size: 1.5rem;
+  }
 
-	@include breakpoint-responsive('md'){
-		font-size: 1.3rem;
-	}
+  @include breakpoint-responsive("md") {
+    font-size: 1.3rem;
+  }
+
+  @include breakpoint-responsive("xs") {
+    font-size: 1rem;
+  }
+}
+
+p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: $primary-text-color;
+
+  // Responsive
+  @include breakpoint-responsive("xl") {
+    font-size: 1rem;
+  }
+
+  @include breakpoint-responsive("md") {
+    font-size: 0.8rem;
+  }
+
+  @include breakpoint-responsive("xs") {
+    font-size: 0.6rem;
+  }
 }
 
 // icon
 
-.fab{
-	font-size: 1.5rem;
-	color: $white;
-	transition: color 0.3s;
+.fab {
+  font-size: 1.5rem;
+  color: $white;
+  transition: color 0.3s;
 }
 
-.fab:hover{
-	color:$light-pink; 
+.fab:hover {
+  color: $light-pink;
 }
-
-

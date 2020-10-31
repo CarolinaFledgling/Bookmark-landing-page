@@ -1,88 +1,80 @@
-  
-.navbar{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-  
-   
-   
-    @include breakpoint-responsive('md'){
-        flex-direction: column;
-        align-items: flex-start; 
-        padding: 0;
-    }  
-}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 100;
 
-.navbar-links{
-    width: 100%;
-    height: 100%;
-    @include breakpoint-responsive('md'){
-        display: none;
-        width: 100%;
-        
-        
-    }
-}
-
-.active{
-    display: flex;
-}
-
-.main-navTop{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0;
+  @include breakpoint-responsive("md") {
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0;
-  
-    @include breakpoint-responsive('md'){
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 0 auto;
-        background: darken($blue,5);
-        opacity: 0.9;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 
-    &__itemTop{  
-     margin-right: 1rem;
-     padding: 0px 20px;
-     @include breakpoint-responsive('md'){
-         text-align: center;
-     }
+.navbar-links {
+  width: 100%;
+  height: 100%;
+  @include breakpoint-responsive("md") {
+    display: none;
+    width: 100%;
+  }
+}
+
+.active {
+  display: flex;
+}
+
+.main-navTop {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint-responsive("md") {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    background: darken($blue, 5);
+    opacity: 0.9;
+  }
+
+  &__itemTop {
+    margin-right: 1rem;
+    padding: 0px 20px;
+    @include breakpoint-responsive("md") {
+      text-align: center;
     }
-    
-    &__linkTop{
+  }
+
+  &__linkTop {
     transition: all 0.3s ease 0s;
     text-transform: uppercase;
     margin-right: 1rem;
-    @include breakpoint-responsive('md'){
-       
+    @include breakpoint-responsive("md") {
     }
-    }
-    &__link:hover{
-        color:$light-pink;  
-    }
+  }
+  &__link:hover {
+    color: $light-pink;
+  }
 }
 
-
-
-
-
-    .logo{
-        display: inline-block;
-        @include breakpoint-responsive('md'){
-        position: absolute;
-        z-index: 3;
-        left:10%;
-        top:40px;
-        }
-    }
-
-    
+.logo {
+  display: inline-block;
+  @include breakpoint-responsive("md") {
+    position: absolute;
+    z-index: 3;
+    left: 10%;
+    top: 40px;
+  }
+}

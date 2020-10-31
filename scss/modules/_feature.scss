@@ -1,213 +1,212 @@
-.feature{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(300px, 1fr) auto;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 1rem;
-    @include breakpoint-responsive('md'){
-        padding: 0.5rem;
-    }
+.feature {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(300px, 1fr) auto;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  @include breakpoint-responsive("md") {
+    padding: 0.5rem;
+  }
+  @include breakpoint-responsive("xs") {
+    margin: 1rem auto;
+  }
 }
 
-.features{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    &__title{
-        text-align: center;
-    }
+  &__title {
+    text-align: center;
+  }
 
-    &__descriptions{
-        text-align: center;
-        width: 50%;
-        line-height: 1.7rem;
-        padding: 1rem 0 2rem 0;
-        @include breakpoint-responsive('md'){
-            padding: 1rem 0 0 0;
-            width: 70%;
-        }
+  &__descriptions {
+    text-align: center;
+    width: 50%;
+    line-height: 1.7rem;
+    padding: 1rem 0 2rem 0;
+    @include breakpoint-responsive("md") {
+      padding: 1rem 0 0 0;
+      width: 70%;
     }
+    @include breakpoint-responsive("xs") {
+      width: 60%;
+    }
+  }
 }
 
-.features-details{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 2rem 0;
+.features-details {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0;
 
-    &__list{
+  &__list {
     display: flex;
     width: 60%;
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
     position: relative;
-    
-    
 
     &::after {
+      content: "";
+      position: absolute;
+      background-color: $primary-text-color;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $light-pink;
+      bottom: 0;
+      left: 0;
+      width: 35%;
+      height: 5px;
+    }
+  }
+
+  // Responsive
+
+  @include breakpoint-responsive("md") {
+    &__list {
+      flex-direction: column;
+      padding: 0.5rem 0;
+      &::after {
+        display: none;
+      }
+      &::before {
+        display: none;
+      }
+    }
+
+    &__item {
+      padding: 1rem 0;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      &::after {
         content: "";
         position: absolute;
         background-color: $primary-text-color;
         bottom: 0;
-        left: 0;
+        left: 50%;
         width: 100%;
         height: 1px;
-        }
-    
-    &::before {
+        transform: translate(-50%, 0);
+      }
+
+      &:first-child {
+        border-top: 1px solid $primary-text-color;
+      }
+      &:first-child::before {
         content: "";
         position: absolute;
         background-color: $light-pink;
         bottom: 0;
-        left: 0;
-        width: 35%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 75%;
         height: 5px;
-        }
+      }
     }
-   
-    // Responsive
-
-    @include breakpoint-responsive('md'){
-
-        
-        &__list{
-            flex-direction: column;
-            padding: 0.5rem 0;
-            &::after{
-                display: none;
-            }
-            &::before{
-                display: none;
-            }
-        }
-
-        &__item{
-            padding: 1rem 0;
-            width: 100%;
-            text-align: center;
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                background-color: $primary-text-color;
-                bottom: 0;
-                left: 50%;
-                width: 100%;
-                height: 1px;
-                transform: translate(-50%,0);
-                
-                }
-
-
-            &:first-child{
-                border-top: 1px solid $primary-text-color;
-            }  
-            &:first-child::before {
-                content: "";
-                position: absolute;
-                background-color: $light-pink;
-                bottom: 0;
-                left: 50%;
-                transform: translate(-50%,0);
-                width: 75%;
-                height: 5px;
-                }
-
-        }
-    }
+  }
 }
 
+// Style hero-features
 
-// Style hero-features 
+.hero-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  column-gap: 2rem;
+  @include breakpoint-responsive("md") {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 1rem auto;
+  }
+}
 
-.hero-features{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
+.hero-details {
+  &__title {
+    width: 100%;
+    @include breakpoint-responsive("md") {
+      margin: 2rem auto 1rem auto;
+      text-align: center;
+    }
+  }
+  &__description {
+    color: $primary-text-color;
+    margin: 2.2rem 0;
+    width: 88%;
+    line-height: 1.7rem;
+    @include breakpoint-responsive("md") {
+      margin: 0 auto 1rem auto;
+      text-align: center;
+      width: 70%;
+    }
+    @include breakpoint-responsive("xs") {
+      width: 60%;
+    }
+  }
+
+  &__btn {
     margin: 0 auto;
-    column-gap: 2rem;
-    @include breakpoint-responsive('md'){
-		grid-template-columns:1fr;
-        grid-template-rows: auto auto;
-	}
-}
-
-.hero-details{
-    &__title{
-        width:100%;
-        @include breakpoint-responsive('md'){
-            margin: 2.5rem auto 1rem auto;
-            text-align: center;
-        }
-        }
-        &__description{
-            color:$primary-text-color;
-            margin: 2.2rem 0;
-            width: 88%;
-            line-height: 1.7rem;
-            @include breakpoint-responsive('md'){
-    
-                margin:0 auto 1rem auto;
-                text-align: center;
-                width: 70%;
-        
-            }
-        } 
+  }
 }
 
 //  IMAGE style + blue overlay
 
 .hero__img {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
 
-    // image overlay blue
-    &::after{
-        content: ""; 
-        position: absolute;
-        bottom: -100px;
-        left: -5%;
-        width: 60%;
-        height: 80%;
-        border-radius: 0 0 40% 0;
-        background-color: $light-blue;
-        opacity: .7; 
-        z-index: -1;
+  // image overlay blue
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -5%;
+    width: 60%;
+    height: 80%;
+    border-radius: 0 0 40% 0;
+    background-color: $light-blue;
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  // Responsive
+  @include breakpoint-responsive("md") {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      left: 0%;
+      width: 50%;
+      height: 80%;
+      border-radius: 0 0 40% 0;
+      background-color: $light-blue;
+      opacity: 0.7;
+      z-index: -1;
     }
+  }
 
-     // Responsive 
-    @include breakpoint-responsive('md'){
-   
-    &::after{
-        content: ""; 
-        position: absolute;
-        top: 40%;
-        left: 0%;
-        width: 50%;
-        height: 80%;
-        border-radius: 0 0 40% 0;
-        background-color: $light-blue;
-        opacity: .7; 
-        z-index: -1;
+  &__ilust-1 {
+    @include breakpoint-responsive("md") {
+      width: 50%;
     }
-
-    
-    }
-
-    &__ilust-1{
-    
-    @include breakpoint-responsive('md'){
-        width: 50%;
-        }
-    }
-
+  }
 }

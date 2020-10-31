@@ -1,259 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Bookmark landing page</title>
-    <script src="https://kit.fontawesome.com/73cf130a3e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/73cf130a3e.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/main.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header" id="header">
-            <!-- TOP-NAVIGATION  -->
-            <div class="navbar">
-                <!-- tabindex="1" -->
-                <div class="menu-btn">
-                    <div class="btn-line"></div>
-                    <div class="btn-line"></div>
-                    <div class="btn-line"></div>
-                </div>
+      <header class="header" id="header">
+        <!-- TOP-NAVIGATION  -->
+        <div class="navbar">
+          <!-- tabindex="1" -->
+          <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
 
-                <a href="index.html" class="logo"><img class="main-header__logo" src="images/logo-bookmark.svg"
-                        alt="Logo"></a>
+          <a href="index.html" class="logo"
+            ><img
+              class="main-header__logo"
+              src="images/logo-bookmark.svg"
+              alt="Logo"
+          /></a>
 
-                <nav class="navbar-links">
-                    <ul class="main-navTop">
-                        <li class="main-navTop__itemTop">
-                            <a href="#feature" class="menu-navTop__link">Features</a>
-                        </li>
-                        <li class="main-navTop__itemTop">
-                            <a href="#service" class="menu-navTop__link">Pricing</a>
-                        </li>
-                        <li class="main-navTop__itemTop">
-                            <a href="#wrapper-contact" class="menu-navTop__link">Contact</a>
-                        </li>
-                        <button class="btn-primary btn__login">Login</button>
-                    </ul>
-                </nav>
-            </div>
-            <!-- SECTION HERO HEADER -->
-            <section class="section-hero">
-                <div class="heading">
-                    <h1 class="heading__title">A Simple Bookmark Manager</h1>
-                    <p class="heading__description">A clean and simple interface to organize your favourite website.
-                        Open
-                        a new browser tab and see your sites load instantly. Try if for free</p>
-                    <div class="heading-buttons">
-                        <button class="btn-primary">Get it on Chrome</button>
-                        <button class="btn-secondary">Get it on Firefox</button>
-                    </div>
-                </div>
-                <div class="hero-img">
-                    <img class="hero-img__ilust-1" src="images/illustration-features-tab-1.svg"
-                        alt="illustration-tablet">
-                </div>
-            </section>
-        </header>
-        <!-- MAIN -->
-        <!-- Section Feature -->
-        <section class="feature" id="feature">
-            <div class="features">
-                <h2 class="features__title">Features</h2>
-                <p class="features__descriptions"> Our aim is to make is quick and easy for you to access your
-                    favourite
-                    websites.Your bookmarks sync between your devices so you can access them on the go</p>
-
-                <div class="features-details">
-                    <ul class="features-details__list">
-                        <li class="features-details__item"><a
-                                class="features-details__link features-details__link--border-bottom" href="#">Simple
-                                Bookmarking</a></li>
-                        <li class="features-details__item"><a class="features-details__link" href="#">Speedy
-                                Searching</a></li>
-                        <li class="features-details__item"><a class="features-details__link" href="#">Easy Sharing</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hero-features">
-                <div class="hero__img">
-                    <img class="hero-img__ilust-1" src="images/illustration-features-tab-1.svg"
-                        alt="illustration tablet">
-                </div>
-                <div class="hero-details">
-                    <h2 class="hero-details__title">Bookmark in one click</h2>
-                    <p class="hero-details__description">Organize your bookmarks however you like.Our
-                        simple
-                        drag-and-drop interface gives you complete control over how you manage your facourite sites
-                    </p>
-                    <button class="btn-primary hero-details__btn">More info</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Download the Extension -->
-        <section class="service" id="service">
-            <div class="downloads">
-                <h2 class="downloads__title">Download the extension</h3>
-                    <p class="downloads__descriptions">We've got browsers in the pipeline. Please do let us know if
-                        you've
-                        got a favourite you'd like us to prioritize</p>
-            </div>
-            <div class="cards">
-                <div class="card card-chrome">
-                    <img class="card__logo" src="images/logo-chrome.svg" alt="Logo Chrome">
-                    <h3 class="card__title">Add to Chrome</h3>
-                    <p class="card__descriptions">Minimum version 62</p>
-                    <img class="card__dots" src="images/bg-dots.svg" alt="dots">
-
-                    <button class="btn-primary card__btn">Add & Install Extension</button>
-
-                </div>
-                <div class="card card-Firefox">
-                    <img class="card__logo" src="images/logo-firefox.svg" alt="Logo Chrome">
-                    <h3 class="card__title">Add to Firefox</h3>
-                    <p class="card__descriptions">Minimum version 62</p>
-                    <img class="card__dots" src="images/bg-dots.svg" alt="dots">
-                    <button class="btn-primary card__btn">Add & Install Extension</button>
-                </div>
-                <div class="card card-Opera">
-                    <img class="card__logo" src="images/logo-opera.svg" alt="Logo Chrome">
-                    <h3 class="card__title">Add to Opera</h3>
-                    <p class="card__descriptions">Minimum version 62</p>
-                    <img class="card__dots" src="images/bg-dots.svg" alt="dots">
-                    <button class="btn-primary card__btn">Add & Install Extension</button>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Section Frequently asked questions -->
-        <section class="questions" id="questions">
-            <div class="question-header">
-                <h2 class="question-header__title">Frequently Asked Questions</h3>
-                    <p class="question-header__description">Here are some of our FAQs. If you have any other questions
-                        you'd
-                        like answered please feel free to email us</p>
-            </div>
-            <div class="question-wrapper">
-                <div class="accordion">
-                    <div class="accordion__item" id="question1">
-                        <a class="accordion__link" href="#question1">What is Bookmark?
-                            <img class="arrow-add" src="images/icon-arrow.svg" alt="arrow">
-                            <img class="arrow-remove" src="images/arrow-red-up.svg" alt="arrow">
-                        </a>
-                        <div class="accordion__answer">
-                            <p class="accordion__paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-                                justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item" id="question2">
-                        <a class="accordion__link" href="#question2">How can I request a new browser?
-                            <img class="arrow-add" src="images/icon-arrow.svg" alt="arrow">
-                            <img class="arrow-remove" src="images/arrow-red-up.svg" alt="arrow">
-                        </a>
-                        <div class="accordion__answer">
-                            <p class="accordion__paragraph">
-                                Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
-                                ligula.
-                                Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue
-                                massa,
-                                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-                                ultricies.
-                                Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item" id="question3">
-                        <a class="accordion__link" href="#question3">Is there a mobile app?
-                            <img class="arrow-add" src="images/icon-arrow.svg" alt="arrow">
-                            <img class="arrow-remove" src="images/arrow-red-up.svg" alt="arrow">
-                        </a>
-                        <div class="accordion__answer">
-                            <p class="accordion__paragraph">
-                                Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
-                                condimentum
-                                urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus.
-                                Sed
-                                sollicitudin ex et ultricies bibendum.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item" id="question4">
-                        <a class="accordion__link" href="#question4">What about other Chromium browsers?
-                            <img class="arrow-add" src="images/icon-arrow.svg" alt="arrow">
-                            <img class="arrow-remove" src="images/arrow-red-up.svg" alt="arrow">
-                        </a>
-                        <div class="accordion__answer">
-                            <p class="accordion__paragraph">
-                                Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui.
-                                Aliquam
-                                vitae neque eget nisl gravida pellentesque non ut velit.</p>
-
-                        </div>
-                    </div>
-                    <button class="btn-primary accordion__btn  ">More info</button>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Section  Email  contact-->
-
-        <section class="wrapper-contact" id="wrapper-contact">
-            <div class="contact">
-                <p class="contact__confirmed">35,000+ already joined</p>
-                <h3 class="contact__title">Stay up-to-date with what we’re doing</h3>
-            </div>
-            <div class="contact-info">
-                <label class="contact-info__label" for="email"></label>
-                <input class="contact-info__input" type="email" id="email" name="email"
-                    placeholder="Enter your email address:">
-                <button class=" btn-primary contact-info__btn">Contact Us</button>
-            </div>
-
-        </section>
-
-        <!-- Bottom navigation -->
-
-        <section class="footer-nav" id="footer-nav">
-            <!-- NAVIGATION -->
-            <nav class="nav-bottom">
-                <img class="nav-bottom_logo" src="images/Group.svg" alt="Logo">
-                <ul class="menu-nav">
-                    <li class="menu-nav__item">
-                        <a href="features.html" class="menu-nav__link">Features</a>
-                    </li>
-                    <li class="menu-nav__item">
-                        <a href="pricing.html" class="menu-nav__link">Pricing</a>
-                    </li>
-                    <li class="menu-nav__item">
-                        <a href="contact.html" class="menu-nav__link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="footer-socials">
-                <a class="footer-socials__link footer-socials__link--fb" href="#"><i
-                        class="fab fa-facebook-square"></i></a>
-                <a class="footer-socials__link" href="#"><i class="fab fa-twitter"></i></a>
-
-
-            </div>
-        </section>
-
-        <footer class="footer-info" id="footer">
-            <p class="footer-info__paragraph">
-                Challenge by Frontend Mentor,
-                Coded by <a href="https://github.com/CarolinaFledgling" class="footer-info__link">Karolina Kulinska</a>
+          <nav class="navbar-links">
+            <ul class="main-navTop">
+              <li class="main-navTop__itemTop">
+                <a href="#feature" class="menu-navTop__link">Features</a>
+              </li>
+              <li class="main-navTop__itemTop">
+                <a href="#service" class="menu-navTop__link">Pricing</a>
+              </li>
+              <li class="main-navTop__itemTop">
+                <a href="#wrapper-contact" class="menu-navTop__link">Contact</a>
+              </li>
+              <button class="btn-primary btn__login">Login</button>
+            </ul>
+          </nav>
+        </div>
+        <!-- SECTION HERO HEADER -->
+        <section class="section-hero">
+          <div class="heading">
+            <h1 class="heading__title">A Simple Bookmark Manager</h1>
+            <p class="heading__description">
+              A clean and simple interface to organize your favourite website.
+              Open a new browser tab and see your sites load instantly. Try if
+              for free
             </p>
-        </footer>
+            <div class="heading-buttons">
+              <button class="btn-primary heading-buttons__btn">
+                Get it on Chrome
+              </button>
+              <button class="btn-secondary">Get it on Firefox</button>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              class="hero-img__ilust-1"
+              src="images/illustration-features-tab-1.svg"
+              alt="illustration-tablet"
+            />
+          </div>
+        </section>
+      </header>
+      <!-- MAIN -->
+      <!-- Section Feature -->
+      <section class="feature" id="feature">
+        <div class="features">
+          <h2 class="features__title">Features</h2>
+          <p class="features__descriptions">
+            Our aim is to make is quick and easy for you to access your
+            favourite websites.Your bookmarks sync between your devices so you
+            can access them on the go
+          </p>
 
+          <div class="features-details">
+            <ul class="features-details__list">
+              <li class="features-details__item">
+                <a
+                  class="features-details__link features-details__link--border-bottom"
+                  href="#"
+                  >Simple Bookmarking</a
+                >
+              </li>
+              <li class="features-details__item">
+                <a class="features-details__link" href="#">Speedy Searching</a>
+              </li>
+              <li class="features-details__item">
+                <a class="features-details__link" href="#">Easy Sharing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-features">
+          <div class="hero__img">
+            <img
+              class="hero-img__ilust-1"
+              src="images/illustration-features-tab-1.svg"
+              alt="illustration tablet"
+            />
+          </div>
+          <div class="hero-details">
+            <h2 class="hero-details__title">Bookmark in one click</h2>
+            <p class="hero-details__description">
+              Organize your bookmarks however you like.Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              facourite sites
+            </p>
+            <button class="btn-primary hero-details__btn">More info</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Download the Extension -->
+      <section class="service" id="service">
+        <div class="downloads">
+          <h2 class="downloads__title">Download the extension</h2>
+          <p class="downloads__descriptions">
+            We've got browsers in the pipeline. Please do let us know if you've
+            got a favourite you'd like us to prioritize
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card card-chrome">
+            <img
+              class="card__logo"
+              src="images/logo-chrome.svg"
+              alt="Logo Chrome"
+            />
+            <h3 class="card__title">Add to Chrome</h3>
+            <p class="card__descriptions">Minimum version 62</p>
+            <img class="card__dots" src="images/bg-dots.svg" alt="dots" />
+
+            <button class="btn-primary card__btn">
+              Add & Install Extension
+            </button>
+          </div>
+          <div class="card card-Firefox">
+            <img
+              class="card__logo"
+              src="images/logo-firefox.svg"
+              alt="Logo Chrome"
+            />
+            <h3 class="card__title">Add to Firefox</h3>
+            <p class="card__descriptions">Minimum version 62</p>
+            <img class="card__dots" src="images/bg-dots.svg" alt="dots" />
+            <button class="btn-primary card__btn">
+              Add & Install Extension
+            </button>
+          </div>
+          <div class="card card-Opera">
+            <img
+              class="card__logo"
+              src="images/logo-opera.svg"
+              alt="Logo Chrome"
+            />
+            <h3 class="card__title">Add to Opera</h3>
+            <p class="card__descriptions">Minimum version 62</p>
+            <img class="card__dots" src="images/bg-dots.svg" alt="dots" />
+            <button class="btn-primary card__btn">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Frequently asked questions -->
+      <section class="questions" id="questions">
+        <div class="question-header">
+          <h2 class="question-header__title">Frequently Asked Questions</h2>
+          <p class="question-header__description">
+            Here are some of our FAQs. If you have any other questions you'd
+            like answered please feel free to email us
+          </p>
+        </div>
+        <div class="question-wrapper">
+          <div class="accordion">
+            <div class="accordion__item" id="question1">
+              <a class="accordion__link" href="#question1"
+                >What is Bookmark?
+                <img
+                  class="arrow-add"
+                  src="images/icon-arrow.svg"
+                  alt="arrow"
+                />
+                <img
+                  class="arrow-remove"
+                  src="images/arrow-red-up.svg"
+                  alt="arrow"
+                />
+              </a>
+              <div class="accordion__answer">
+                <p class="accordion__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  tincidunt justo eget ultricies fringilla. Phasellus blandit
+                  ipsum quis quam ornare mattis.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item" id="question2">
+              <a class="accordion__link" href="#question2"
+                >How can I request a new browser?
+                <img
+                  class="arrow-add"
+                  src="images/icon-arrow.svg"
+                  alt="arrow"
+                />
+                <img
+                  class="arrow-remove"
+                  src="images/arrow-red-up.svg"
+                  alt="arrow"
+                />
+              </a>
+              <div class="accordion__answer">
+                <p class="accordion__paragraph">
+                  Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                  massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                  luctus eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdie tVivamus luctus
+                  eros aliquet convallis ultricies. Mauris augue massa,
+                  ultricies non ligula. Suspendisse imperdiet.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item" id="question3">
+              <a class="accordion__link" href="#question3"
+                >Is there a mobile app?
+                <img
+                  class="arrow-add"
+                  src="images/icon-arrow.svg"
+                  alt="arrow"
+                />
+                <img
+                  class="arrow-remove"
+                  src="images/arrow-red-up.svg"
+                  alt="arrow"
+                />
+              </a>
+              <div class="accordion__answer">
+                <p class="accordion__paragraph">
+                  Sed consectetur quam id neque fermentum accumsan. Praesent
+                  luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                  Cras in ligula quis est pharetra mattis sit amet pharetra
+                  purus. Sed sollicitudin ex et ultricies bibendum.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item" id="question4">
+              <a class="accordion__link" href="#question4"
+                >What about other Chromium browsers?
+                <img
+                  class="arrow-add"
+                  src="images/icon-arrow.svg"
+                  alt="arrow"
+                />
+                <img
+                  class="arrow-remove"
+                  src="images/arrow-red-up.svg"
+                  alt="arrow"
+                />
+              </a>
+              <div class="accordion__answer">
+                <p class="accordion__paragraph">
+                  Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                  placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                  gravida pellentesque non ut velit.
+                </p>
+              </div>
+            </div>
+            <button class="btn-primary accordion__btn">More info</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section  Email  contact-->
+
+      <section class="wrapper-contact" id="wrapper-contact">
+        <div class="contact">
+          <p class="contact__confirmed">35,000+ already joined</p>
+          <h3 class="contact__title">Stay up-to-date with what we’re doing</h3>
+        </div>
+        <div class="contact-info">
+          <label class="contact-info__label" for="email"></label>
+          <input
+            class="contact-info__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address:"
+          />
+          <button class="btn-primary contact-info__btn">Contact Us</button>
+        </div>
+      </section>
+
+      <!-- Bottom navigation -->
+
+      <section class="footer-nav" id="footer-nav">
+        <!-- NAVIGATION -->
+        <nav class="nav-bottom">
+          <img class="nav-bottom_logo" src="images/Group.svg" alt="Logo" />
+          <ul class="menu-nav">
+            <li class="menu-nav__item">
+              <a href="features.html" class="menu-nav__link">Features</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="pricing.html" class="menu-nav__link">Pricing</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="contact.html" class="menu-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-socials">
+          <a class="footer-socials__link footer-socials__link--fb" href="#"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a class="footer-socials__link" href="#"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </section>
+
+      <footer class="footer-info" id="footer">
+        <p class="footer-info__paragraph">
+          Challenge by Frontend Mentor, Coded by
+          <a
+            href="https://github.com/CarolinaFledgling"
+            class="footer-info__link"
+            >Karolina Kulinska</a
+          >
+        </p>
+      </footer>
     </div>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

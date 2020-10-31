@@ -1,45 +1,43 @@
-.container{
-    height: 100%;
-    max-width: 1540px;
-    margin: 0 auto;
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr auto 400px 100px 50px;
-    grid-template-areas:
-      "header"
-      "feature "
-      "service "
-      "questions "
-      "wrapper-contact "
-      "footer-nav "
-      "footer ";      
+.container {
+  height: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  display: grid;
+  overflow: hidden;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto 400px 100px 50px;
+  grid-template-areas:
+    "header"
+    "feature "
+    "service "
+    "questions "
+    "wrapper-contact "
+    "footer-nav "
+    "footer ";
 }
 
-
-.header{
-    grid-area: header;
+.header {
+  grid-area: header;
 }
 
-#feature{
-    grid-area: feature;
+#feature {
+  grid-area: feature;
 }
 
 #service {
-    grid-area: service ;
+  grid-area: service;
 }
-#questions{
-grid-area:questions;
+#questions {
+  grid-area: questions;
 }
-#wrapper-contact{
-    grid-area: wrapper-contact;
-    
-    
+#wrapper-contact {
+  grid-area: wrapper-contact;
 }
-#footer-nav{
-    grid-area: footer-nav;
+#footer-nav {
+  grid-area: footer-nav;
 }
 
-#footer{
-    grid-area: footer;
+#footer {
+  grid-area: footer;
 }
