@@ -359,7 +359,6 @@ html {
 a {
   color: #9194a1;
   text-decoration: none;
-  text-decoration: none;
   font-weight: 400;
   letter-spacing: 0.1rem;
   -webkit-transition: all 0.1s linear;
@@ -731,9 +730,7 @@ p {
 .nav-main {
   position: fixed;
   top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  left: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,6 +738,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 1rem;
   background-color: #fff;
   z-index: 99999;
@@ -750,7 +750,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -784,6 +786,11 @@ p {
   }
 }
 
+.nav-top__item {
+  width: 100%;
+  text-align: right;
+}
+
 @media (max-width: 768px) {
   .nav-top__item {
     border-bottom: 1px solid rgba(206, 206, 206, 0.466);
@@ -802,6 +809,7 @@ p {
 
 .nav-top__link {
   padding-left: 2rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -851,24 +859,29 @@ p {
   visibility: visible;
 }
 
+.nav-main__logo-link {
+  padding: 0.5rem 0;
+  margin-left: 1rem;
+}
+
 @media (max-width: 768px) {
   .nav-main__logo-link {
     position: absolute;
-    left: 5%;
+    left: 20%;
     top: 40px;
     z-index: 9999;
     padding-left: 1rem;
-    visibility: hidden;
+    display: none;
   }
 }
 
 .nav-main__logo-linkWhite {
-  visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 768px) {
   .nav-main__logo-linkWhite {
-    visibility: visible;
+    display: block;
     position: absolute;
     left: 5%;
     top: 40px;
@@ -878,6 +891,7 @@ p {
 }
 
 .container {
+  position: relative;
   height: 100%;
   max-width: 1540px;
   margin: 0 auto;
@@ -937,7 +951,6 @@ p {
 }
 
 .header {
-  position: relative;
   width: 100%;
   margin: 0 auto;
   display: -ms-grid;
