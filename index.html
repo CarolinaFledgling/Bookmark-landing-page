@@ -14,37 +14,48 @@
   <body>
     <div class="container">
       <header class="header" id="header">
-        <!-- TOP-NAVIGATION  -->
-        <div class="navbar">
-          <!-- tabindex="1" -->
+        <nav class="nav-main">
           <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
           </div>
 
-          <a href="index.html" class="logo"
+          <a href="index.html" class="nav-main__logo-link"
             ><img
-              class="main-header__logo"
+              class="nav-main__logo"
               src="images/logo-bookmark.svg"
               alt="Logo"
           /></a>
+          <a href="index.html" class="nav-main__logo-linkWhite"
+            ><img
+              class="nav-main__logo-white"
+              src="images/Logo-white-mobile.svg"
+              alt="Logo"
+          /></a>
 
-          <nav class="navbar-links">
-            <ul class="main-navTop">
-              <li class="main-navTop__itemTop">
-                <a href="#feature" class="menu-navTop__link">Features</a>
-              </li>
-              <li class="main-navTop__itemTop">
-                <a href="#service" class="menu-navTop__link">Pricing</a>
-              </li>
-              <li class="main-navTop__itemTop">
-                <a href="#wrapper-contact" class="menu-navTop__link">Contact</a>
-              </li>
-              <button class="btn-primary btn__login">Login</button>
-            </ul>
-          </nav>
-        </div>
+          <ul class="nav-top">
+            <li class="nav-top__item">
+              <a href="#feature" class="nav-top__link">Features</a>
+            </li>
+            <li class="nav-top__item">
+              <a href="#service" class="nav-top__link">Pricing</a>
+            </li>
+            <li class="nav-top__item">
+              <a href="#wrapper-contact" class="nav-top__link">Contact</a>
+            </li>
+            <button class="btn-primary btn__login">Login</button>
+            <div class="navbar-socials">
+              <a class="navbar-socials__link navbar-socials__link--fb" href="#"
+                ><i class="fab navbar-socials__fab fa-facebook-square"></i
+              ></a>
+              <a class="navbar-socials__link" href="#"
+                ><i class="fab navbar-socials__fab fa-twitter"></i
+              ></a>
+            </div>
+          </ul>
+        </nav>
+
         <!-- SECTION HERO HEADER -->
         <section class="section-hero">
           <div class="heading">
@@ -332,9 +343,11 @@
       <footer class="footer-info" id="footer">
         <p class="footer-info__paragraph">
           Challenge by Frontend Mentor, Coded by
-          <a href="https://github.com/CarolinaFledgling"
+          <a
+            href="https://github.com/CarolinaFledgling"
             class="footer-info__link"
-            >Karolina Kulinska</a>
+            >Karolina Kulinska</a
+          >
         </p>
       </footer>
     </div>

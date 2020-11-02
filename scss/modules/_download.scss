@@ -48,6 +48,12 @@
     grid-template-columns: 1fr;
     width: 50%;
   }
+  @include breakpoint-responsive("sm") {
+    width: 60%;
+  }
+  @include breakpoint-responsive("xs") {
+    width: 80%;
+  }
 }
 
 .card {

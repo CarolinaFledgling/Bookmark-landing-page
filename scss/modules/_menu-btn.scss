@@ -1,45 +1,42 @@
-.menu-btn{
-    position: absolute;
-    z-index: 3;
-    right:10%;
-    top:40px;
-    cursor: pointer;
+.menu-btn {
+  position: absolute;
+  z-index: 99;
+  right: 10%;
+  top: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  display: none;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #444;
     transition: all 0.5s ease-out;
-    display: none;
+  }
 
-    .btn-line{
-        width: 28px;
-        height: 3px;
-        margin: 0 0 5px 0;
-        background: #444;
-        transition: all 0.5s ease-out;
+  // Rotate into X with menu Lines
+
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background: $white;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+        background: $white;
+      }
     }
+  }
 
-    // Rotate into X with menu Lines 
-
-    &.close{
-        transform:rotate(180deg);
-
-        .btn-line{
-            &:nth-child(1){
-               transform: rotate(45deg) translate(5px, 5px); 
-            }
-            &:nth-child(2){
-                opacity: 0; 
-             }
-             &:nth-child(3){
-                transform: rotate(-45deg) translate(7px, -6px); 
-             }
-        }
-    }
-
-    // Responsive 
-    @include breakpoint-responsive('md'){
-        display: block;
-    }
+  // Responsive
+  @include breakpoint-responsive("md") {
+    display: block;
+  }
 }
-
-
-
-
-

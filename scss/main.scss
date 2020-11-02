@@ -23,5 +23,10 @@
 //  Pytania
 
 // 1. Jeśli chodzi o ten overlay niebieski który jest pod zdjęciem - zapomomniałam że to rozwiązywało problem scrolla na dole , jeśli damy twoje rozwiązanie, czyli usunięcie overflow: hidden; + zmiana right i width , to dostajemy scrolla na dole ;)
-// 2. Zwiększenie  sekcji kontakt i footer na cała szerokość width -  jest to zablokowane przez ustawienie main-width na 1540px ( można to jakość obejść ? )
-// 3. Dlaczego styl na poszczególne przyciski, które nieco różnią się od tych podstawowych ,napisany w module gdzie mam style dla wszystkich przycisków czyli btns-style , nie działają , jest tylko brany pierwszy kod ? Chciałam zrobić jeden plik z wszystkimi przyciskami na stronie? działa ren kod jesli go przeniose do poszczególnych sekcji 
+// 2. Zwiększenie  sekcji contact i footer na cała szerokość width -  jest to zablokowane przez ustawienie main-width na 1540px ( można to jakość obejść ? )
+// 3. Dlaczego styl na poszczególne przyciski, które nieco różnią się od tych podstawowych, napisany w module gdzie mam style dla wszystkich przycisków czyli btns-style , nie działają , jest tylko brany kod z tego pliku? Chciałam zrobić jeden plik z wszystkimi przyciskami na stronie? . Kod dodatkowy dla przyciskow które potrzebuja dodatkowych styli nie działa , działa tylko jeśli go przeniose do poszczególnych sekcji. Moje pytanie dlaczegoo tak jest :) 
+//specjalnie nie przenosiłam tego dodatkowego kodu dla poszczegolnych przycisków do odpowiednich plików jak np btn__login do pliku top-nav , ponieważ chciłam poznać dlaczego ten jeden plik z wszystkimi przyciskami nie działa 
+
+// 4. Menu na mobile eh , pogubiłam się , nie wygląda ono tak jak wskazuje na to projekt , min nie wiem jak ustawic socilas icons żeby były na dole , logo powinno być białe - walczę z tym, przy scrollowaniu , logo i guzik zamykający zostaja u góry a reszta jest scrolluje a powinny trzymać się razem :) - walczę z tym teraz również 
+
+// 5  Java script - Czy mogłabyś mi wytlumaczyć twoje rozwiązanie , jak się zabrać za kod tworząc to rozwiązanie , moje strzałki nie działają , tylko pierwsza - ( o Java script malo wiem, właśnie po stylowaniu na tym chce się skupić ) 

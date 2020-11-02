@@ -58,14 +58,18 @@ questions.forEach((item) => {
   });
 });
 
-// Hambuger menu
+//Hambuger menu
 
 const menuBtn = document.querySelector(".menu-btn");
-const navBarLinks = document.querySelector(".navbar-links");
+const navBarLinks = document.querySelector(".nav-top");
+const navBarSocials = document.querySelector(".navbar-socials");
+const navLogoMobile = document.querySelector(".nav-main__logo-white");
 
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   menuBtn.classList.toggle("close");
-  navBarLinks.classList.toggle("active");
+  navBarLinks.classList.toggle("show");
+  navBarSocials.classList.toggle("show");
+  navLogoMobile.classList.toggle("show");
 }

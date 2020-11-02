@@ -57,7 +57,7 @@
 }
 
 .footer-socials {
-  @include breakpoint-responsive("xs") {
+  @include breakpoint-responsive("sm") {
     padding-top: 1rem;
   }
   &__link--fb {

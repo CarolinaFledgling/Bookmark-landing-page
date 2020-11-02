@@ -1,80 +1,96 @@
-.navbar {
-  width: 100%;
+.nav-main {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
-  z-index: 100;
-
-  @include breakpoint-responsive("md") {
-    height: 100vh;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
-.navbar-links {
-  width: 100%;
-  height: 100%;
-  @include breakpoint-responsive("md") {
-    display: none;
-    width: 100%;
-  }
-}
-
-.active {
-  display: flex;
-}
-
-.main-navTop {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  padding: 0 1rem;
+}
 
-  @include breakpoint-responsive("md") {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    background: darken($blue, 5);
-    opacity: 0.9;
-  }
+.nav-top {
+  display: flex;
+  align-items: center;
 
-  &__itemTop {
-    margin-right: 1rem;
-    padding: 0px 20px;
+  &__item {
+    width: 80%;
     @include breakpoint-responsive("md") {
+      border-bottom: 1px solid $border-opacity;
       text-align: center;
     }
   }
-
-  &__linkTop {
-    transition: all 0.3s ease 0s;
-    text-transform: uppercase;
-    margin-right: 1rem;
+  &__item:first-child {
     @include breakpoint-responsive("md") {
+      border-top: 1px solid $border-opacity;
+      text-align: center;
     }
   }
-  &__link:hover {
-    color: $light-pink;
+  &__link {
+    @include breakpoint-responsive("md") {
+      color: $white;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+    }
+    display: inline-block;
+    padding-left: 2rem;
+  }
+
+  @include breakpoint-responsive("md") {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    background: darken($blue, 5);
+    visibility: hidden;
+    transition: top 1s;
+    overflow: hidden;
+  }
+
+  .btn__login {
+    margin-left: 4rem;
+    @include breakpoint-responsive("md") {
+      margin: 3rem auto 3rem auto;
+      width: 80%;
+      font-size: 1.5rem;
+      color: $white;
+      background-color: transparent;
+      border: 2px solid $white;
+    }
   }
 }
 
-.logo {
-  display: inline-block;
-  @include breakpoint-responsive("md") {
-    position: absolute;
-    z-index: 3;
-    left: 10%;
-    top: 40px;
+.navbar-socials {
+  visibility: hidden;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  &__fab {
+    font-size: 2rem;
+    padding: 0 1rem;
   }
+}
+
+//for java script to show socials icons in main nav and white logo 
+.show {
+  visibility: visible;
+}
+
+
+
+
+.nav-main__logo-linkWhite{
+  // visibility: hidden;
+  z-index: 1000;
+}
+
+.nav-main__logo-link{
+  @include breakpoint-responsive("md"){
+  display: none;
+}
 }
