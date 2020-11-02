@@ -1,16 +1,25 @@
 .nav-main {
+  position: fixed;
+  top:0;
+  left:50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
+  background-color: $white;
+  z-index: 99999;
+  line-height: 100px;
 }
 
 .nav-top {
   display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: space-between;
 
   &__item {
-    width: 80%;
+    
     @include breakpoint-responsive("md") {
       border-bottom: 1px solid $border-opacity;
       text-align: center;
@@ -89,8 +98,8 @@
   z-index: 1000;
 }
 
-.nav-main__logo-link{
-  @include breakpoint-responsive("md"){
-  display: none;
-}
-}
+// .nav-main__logo-link{
+//   @include breakpoint-responsive("md"){
+//   display: none;
+//  }
+// }
