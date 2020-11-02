@@ -744,7 +744,6 @@ p {
   padding: 0 1rem;
   background-color: #fff;
   z-index: 99999;
-  line-height: 100px;
 }
 
 .nav-top {
@@ -755,36 +754,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-  .nav-top__item {
-    border-bottom: 1px solid rgba(206, 206, 206, 0.466);
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-top__item:first-child {
-    border-top: 1px solid rgba(206, 206, 206, 0.466);
-    text-align: center;
-  }
-}
-
-.nav-top__link {
-  display: inline-block;
-  padding-left: 2rem;
-}
-
-@media (max-width: 768px) {
-  .nav-top__link {
-    color: #fff;
-    padding: 2rem 0;
-    font-size: 1.5rem;
-  }
+  padding: 0.5rem 0;
 }
 
 @media (max-width: 768px) {
@@ -811,6 +781,34 @@ p {
     -webkit-transition: top 1s;
     transition: top 1s;
     overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-top__item {
+    border-bottom: 1px solid rgba(206, 206, 206, 0.466);
+    text-align: center;
+    width: 80%;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-top__item:first-child {
+    border-top: 1px solid rgba(206, 206, 206, 0.466);
+    text-align: center;
+  }
+}
+
+.nav-top__link {
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-top__link {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0;
   }
 }
 
@@ -853,8 +851,30 @@ p {
   visibility: visible;
 }
 
+@media (max-width: 768px) {
+  .nav-main__logo-link {
+    position: absolute;
+    left: 5%;
+    top: 40px;
+    z-index: 9999;
+    padding-left: 1rem;
+    visibility: hidden;
+  }
+}
+
 .nav-main__logo-linkWhite {
-  z-index: 1000;
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .nav-main__logo-linkWhite {
+    visibility: visible;
+    position: absolute;
+    left: 5%;
+    top: 40px;
+    z-index: 9999;
+    padding-left: 1rem;
+  }
 }
 
 .container {
@@ -924,8 +944,8 @@ p {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 100px 1fr;
-      grid-template-rows: 100px 1fr;
+  -ms-grid-rows: 70px 1fr;
+      grid-template-rows: 70px 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

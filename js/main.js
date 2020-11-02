@@ -73,3 +73,7 @@ function toggleMenu() {
   navBarSocials.classList.toggle("show");
   navLogoMobile.classList.toggle("show");
 }
+
+
+//  Rozwiazanie dla białego Loga 
+// napisać funkcje która będzie po kliknięciu w hamburger będzie pojawiało sie logo białe 

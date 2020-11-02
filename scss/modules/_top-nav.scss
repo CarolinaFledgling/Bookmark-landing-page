@@ -9,37 +9,17 @@
   padding: 0 1rem;
   background-color: $white;
   z-index: 99999;
-  line-height: 100px;
+  @include breakpoint-responsive("md"){
+   
+  }
+  
 }
 
 .nav-top {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
-
-  &__item {
-    
-    @include breakpoint-responsive("md") {
-      border-bottom: 1px solid $border-opacity;
-      text-align: center;
-    }
-  }
-  &__item:first-child {
-    @include breakpoint-responsive("md") {
-      border-top: 1px solid $border-opacity;
-      text-align: center;
-    }
-  }
-  &__link {
-    @include breakpoint-responsive("md") {
-      color: $white;
-      padding: 2rem 0;
-      font-size: 1.5rem;
-    }
-    display: inline-block;
-    padding-left: 2rem;
-  }
+  padding: 0.5rem 0;
 
   @include breakpoint-responsive("md") {
     height: 100vh;
@@ -58,6 +38,34 @@
     overflow: hidden;
   }
 
+  &__item {
+    
+    @include breakpoint-responsive("md") {
+      border-bottom: 1px solid $border-opacity;
+      text-align: center;
+      width: 80%;
+      padding: 1rem 0;
+      
+    }
+  }
+  &__item:first-child {
+    @include breakpoint-responsive("md") {
+      border-top: 1px solid $border-opacity;
+      text-align: center;
+      
+    }
+  }
+  &__link {
+    padding-left: 2rem;
+   
+    @include breakpoint-responsive("md") {
+      color: $white;
+      font-size: 1.5rem;
+      padding: 0;
+    }
+    
+  }
+
   .btn__login {
     margin-left: 4rem;
     @include breakpoint-responsive("md") {
@@ -69,6 +77,8 @@
       border: 2px solid $white;
     }
   }
+
+  
 }
 
 .navbar-socials {
@@ -91,15 +101,28 @@
 }
 
 
+// Logo 
 
-
-.nav-main__logo-linkWhite{
-  // visibility: hidden;
-  z-index: 1000;
+.nav-main__logo-link{
+  @include breakpoint-responsive("md"){
+  position: absolute;
+  left:5%;
+  top: 40px;
+  z-index: 9999;
+  padding-left: 1rem;
+  visibility: hidden;
+  }
 }
 
-// .nav-main__logo-link{
-//   @include breakpoint-responsive("md"){
-//   display: none;
-//  }
-// }
+.nav-main__logo-linkWhite{
+  visibility: hidden;
+  @include breakpoint-responsive("md"){
+    visibility: visible;
+    position: absolute;
+    left:5%;
+    top: 40px;
+    z-index: 9999;
+    padding-left: 1rem;
+  }
+}
+
