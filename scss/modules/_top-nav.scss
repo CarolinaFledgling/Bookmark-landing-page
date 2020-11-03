@@ -1,18 +1,18 @@
 .nav-main {
+  width: 100%;
   position: fixed;
   top:0;
   left:0;
-  width: 100%;
   display: flex;
+  padding: 1rem 0;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
   background-color: $white;
   z-index: 99999;
-  @include breakpoint-responsive("md"){
-   
-  }
-  
+}
+
+.wrapper-list{
+  margin-left: auto;
+  display: flex;
 }
 
 .nav-top {
@@ -20,6 +20,7 @@
   justify-content: flex-end;
   align-items: center;
   padding: 0.5rem 0;
+  
   
 
   @include breakpoint-responsive("md") {
@@ -98,7 +99,7 @@
 .nav-main__logo-link{
   // width: 100%;
   padding: 0.5rem 0;
-  margin-left: 1rem;
+  margin-left: 2rem;
   @include breakpoint-responsive("md"){
   position: absolute;
   left:20%;

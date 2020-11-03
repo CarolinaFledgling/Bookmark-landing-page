@@ -740,22 +740,26 @@ p {
 }
 
 .nav-main {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 1rem;
   background-color: #fff;
   z-index: 99999;
+}
+
+.wrapper-list {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav-top {
@@ -858,7 +862,7 @@ p {
 
 .nav-main__logo-link {
   padding: 0.5rem 0;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 @media (max-width: 768px) {
