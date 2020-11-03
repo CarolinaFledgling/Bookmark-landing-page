@@ -30,7 +30,7 @@
     left: 0;
     z-index: 10;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     opacity: 0.9;
     background: darken($blue, 5);
@@ -70,19 +70,6 @@
     }
     
   }
-
-  .btn__login {
-    margin-left: 4rem;
-    @include breakpoint-responsive("md") {
-      margin: 3rem auto 3rem auto;
-      width: 80%;
-      font-size: 1.5rem;
-      color: $white;
-      background-color: transparent;
-      border: 2px solid $white;
-    }
-  }
-
   
 }
 

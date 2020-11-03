@@ -8,7 +8,7 @@
   border: 2px solid transparent;
   transition: all 0.3s linear;
 
-  // Responsive
+ 
   @include breakpoint-responsive("md") {
     padding: 13px 23px;
   }
@@ -32,7 +32,7 @@
     color: $light-blue;
     border: 2px solid $light-blue;
   }
-  // Responsive
+
   @include breakpoint-responsive("md") {
     padding: 13px 23px;
     font-size: 0.8rem;
@@ -60,7 +60,7 @@
     color: $primary-heading-color;
     border: 2px solid $primary-heading-color;
   }
-  // Responsive
+  
   @include breakpoint-responsive("md") {
     padding: 13px 23px;
     font-size: 0.8rem;
@@ -69,24 +69,33 @@
     padding: 9px 13px;
     font-size: 0.7rem;
   }
-
+}
   //  Style btn Login - in the main navigation
 
   .btn__login {
     padding: 9px 25px;
     background-color: $light-pink;
     color: $white;
+    margin-left: 4rem;
 
     &:hover {
       background-color: $white;
       color: $light-pink;
       border: 2px solid $light-pink;
     }
+    @include breakpoint-responsive("md") {
+      margin: 3rem auto 3rem auto;
+      width: 80%;
+      font-size: 1.5rem;
+      color: $white;
+      background-color: transparent;
+      border: 2px solid $white;
+    }
   }
 
   //  Style btn Get it on Chrome  - in the Header section
 
-  // ten styl napisany tutaj nie działa , dopiero jak zostanie przeniesiony do pliku header tam działa
+
   .heading-buttons__btn {
     margin-right: 1rem;
   }
@@ -103,7 +112,6 @@
       border: 2px solid $light-blue;
     }
 
-    // Responsive
     @include breakpoint-responsive("md") {
       margin: 0 auto;
       margin-top: 1rem;
@@ -161,4 +169,4 @@
       border: 2px solid $light-blue;
     }
   }
-}
+

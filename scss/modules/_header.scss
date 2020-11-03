@@ -1,5 +1,4 @@
 .header {
-  // position: relative;
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -54,7 +53,7 @@
       margin: 2.2rem 0;
       width: 88%;
       line-height: 1.7rem;
-      // Responsive
+      
       @include breakpoint-responsive("md") {
         margin: 0 auto;
         text-align: center;
@@ -62,7 +61,7 @@
       }
     }
 
-    // Responsive
+   
     @include breakpoint-responsive("md") {
       grid-row: 2 / 3;
       text-align: center;
@@ -74,14 +73,11 @@
 
   .heading-buttons {
     display: flex;
-    // Responsive
     @include breakpoint-responsive("md") {
       justify-content: center;
       margin-top: 1rem;
     }
-    &__btn {
-      margin-right: 1rem;
-    }
+   
   }
 }
 
@@ -107,7 +103,7 @@
     z-index: -1;
   }
 
-  // Responsive
+
   @include breakpoint-responsive("md") {
     grid-row: 1 / 2;
     &::after {
