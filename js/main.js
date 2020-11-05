@@ -28,7 +28,9 @@ questions.forEach((item) => {
 const menuBtn = document.querySelector(".menu-btn");
 const navBarLinks = document.querySelector(".nav-top");
 const navBarSocials = document.querySelector(".navbar-socials");
-const navLogoMobile = document.querySelector(".nav-main__logo-white");
+const navLogoMobile = document.querySelector(".nav-main__logo-linkWhite");
+const navLogoDesktop = document.querySelector(".nav-main__logo-link");
+const loginBtn = document.querySelector(".btn__login");
 
 menuBtn.addEventListener("click", toggleMenu);
 
@@ -37,7 +39,12 @@ function toggleMenu() {
   navBarLinks.classList.toggle("show");
   navBarSocials.classList.toggle("show");
   navLogoMobile.classList.toggle("show");
+  navLogoMobile.classList.toggle("hide");
+  navLogoDesktop.classList.toggle("hide");
+  loginBtn.classList.toggle("show");
 }
+
+
 
 
 //  Białe Logo 

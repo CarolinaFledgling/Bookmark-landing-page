@@ -8,31 +8,28 @@
   align-items: center;
   background-color: $white;
   z-index: 99999;
+  @include breakpoint-responsive("md"){
+    padding: 0;
+  }
 }
 
 .wrapper-list{
-  // height: 100vh;
-  // width: 100vw;
-  margin-left: auto;
   display: flex;
-  // @include breakpoint-responsive("md"){
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 10;
-  //   background-color: darken($blue, 5);
-  //   opacity: 0.9;
-  //   visibility: hidden;
-  //   transition: top 1s;
-  //   overflow: hidden;
-  // }
+  flex:1;
+  align-items: center;
+  margin-left: 2rem;
+  @include breakpoint-responsive("md"){
+  margin-left: 0;
+
+  }
+ 
 }
 
 .nav-top {
   display: flex;
   align-items: center;
-  padding: 0.5rem 0;
   @include breakpoint-responsive("md") {
+    padding-top: 6rem;
     height: 100vh;
     width: 100vw;
     flex-direction: column;
@@ -45,15 +42,12 @@
     background-color: darken($blue, 5);
     opacity: 0.9;
     visibility: hidden;
-    transition: top 1s;
     overflow: hidden;
   }
 
   &__item {
    width: 100%;
-   text-align: right;
-
-    
+   text-align: right; 
     @include breakpoint-responsive("md") {
       border-bottom: 1px solid $border-opacity;
       text-align: center;
@@ -84,7 +78,6 @@
 }
 
 .navbar-socials {
-  visibility: hidden;
   display: flex;
   width: 80%;
   margin: 0 auto;
@@ -102,6 +95,10 @@
 }
 
 //for java script to show socials icons in main nav and white logo 
+
+.hide {
+  display: none;
+}
 .show {
   visibility: visible;
 }
@@ -109,28 +106,13 @@
 
 // Logo blue & white
 
-.nav-main__logo-link{
-  padding: 0.5rem 0;
-  margin-left: 2rem;
-  @include breakpoint-responsive("md"){
-  position: absolute;
-  left:20%;
-  top: 40px;
-  z-index: 9999;
-  padding-left: 1rem;
-  display: none;
-  }
-}
 
-.nav-main__logo-linkWhite{
-  display: none;
-  @include breakpoint-responsive("md"){
-   display: block;
+.nav-main__logo-link {
+  @include breakpoint-responsive("md") {
     position: absolute;
-    left:5%;
+    left: 5%;
     top: 40px;
     z-index: 9999;
     padding-left: 1rem;
   }
 }
-

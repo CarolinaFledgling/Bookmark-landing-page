@@ -91,6 +91,8 @@
       background-color: transparent;
       border: 2px solid $white;
       z-index: 999999;
+      // DODALA 
+      visibility: hidden;
     }
   }
 
@@ -133,8 +135,7 @@
       color: $light-blue;
       border: 1px solid $light-blue;
     }
-    @include breakpoint-responsive("xs") {
-    }
+  
   }
 
   //  Style btn - in the contact section
