@@ -1,19 +1,48 @@
 // Colors
 
-// Primary 
+// button
+$primary-btn-color:hsl(233, 26%, 24%);
+$secondary-btn-color:hsl(0, 94%, 66%);
 
-$primary-heading-color:red;
-$primary-btn-color:red;
-$secondary-btn-color:red;
 
-// Neutral 
+// typogrphy
+$primary-text-color:hsl(229, 8%, 60%);
+$primary-heading-color:hsl(229, 31%, 21%);
+$link-color:hsl(228, 45%, 44%);
+
+
+// Background
+$primary-bgc-color:hsl(229, 31%, 21%);
+$secondary-bgc-color:hsl(231, 69%, 60%);
+
+
+
 
 
 // Breakpoints
 
-$breakpoints: (
-  'sm': '576px',
-  'md': '768px',
-  'lg': '992px',
-  'xl': '1200px'
-);
+
+// $font-weights: ("regular": 400, "medium": 500);
+
+// $breakpoints: (
+//   'xsm' '375px',
+//   'sm': '576px',
+//   'md': '768px',
+//   'lg': '992px',
+//   'xl': '1200px',
+//   'xxl':'1440px',
+// );
+
+//PADDING
+
+$xs: 0.9rem;
+$sm: 1.4rem;
+$md: 2rem;
+$lg: 2.8rem;
+$xl: 4.5rem;
+$xxl: 6rem;
+
+// ## Layout
+
+// - Mobile: 375px
+// - Desktop: 1440px
