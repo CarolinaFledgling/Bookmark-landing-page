@@ -37,15 +37,12 @@ menuBtn.addEventListener("click", toggleMenu);
 function toggleMenu() {
   menuBtn.classList.toggle("close");
   navBarLinks.classList.toggle("show");
-  navBarSocials.classList.toggle("show");
-  navLogoMobile.classList.toggle("show");
+  navBarSocials.classList.toggle("hide");
   navLogoMobile.classList.toggle("hide");
   navLogoDesktop.classList.toggle("hide");
-  loginBtn.classList.toggle("show");
+  loginBtn.classList.toggle("showBtnLogin");
 }
 
 
 
 
-//  Białe Logo 
-// napisać funkcje która będzie po kliknięciu w hamburger będzie pojawiało sie logo białe 

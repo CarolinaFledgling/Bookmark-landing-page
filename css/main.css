@@ -773,6 +773,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 2rem;
 }
 
@@ -789,12 +792,13 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 6rem;
 }
 
 @media (max-width: 768px) {
   .nav-top {
     padding-top: 6rem;
-    height: 100vh;
+    height: 0vh;
     width: 100vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -814,6 +818,8 @@ p {
     opacity: 0.9;
     visibility: hidden;
     overflow: hidden;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
   }
 }
 
@@ -828,6 +834,12 @@ p {
     text-align: center;
     width: 80%;
     padding: 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-top__item {
+    padding: 0.5rem;
   }
 }
 
@@ -848,6 +860,12 @@ p {
     color: #fff;
     font-size: 1.5rem;
     padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-top__link {
+    font-size: 1rem;
   }
 }
 
@@ -883,6 +901,11 @@ p {
 }
 
 .show {
+  visibility: visible;
+  height: 100vh;
+}
+
+.showBtnLogin {
   visibility: visible;
 }
 
