@@ -28,10 +28,10 @@
 
 
 // 1. Menu mobile: 
-// 
+// a) udało sie zrobić menu wychodzace z góry , chyba jest ok . Menu mobile tez poprawiłam , wziełam twoje zaproponowane rozwiązanie ale trochę zmieniłam klasy w Js , bo chyba źle sie wyświetlało.
 // b) Jak zabrać sie za to POPRAWNIE I MADRZE : przy niektórych rozdzielczościach w ułożeniu Landscape, trzeba nadpisac style , jak możemy to zrobić "lepiej" uzywajać map-get lub cos z Sassa, ale zeby było zarówno orientetion landscape i max-with, który potrzebujemy, albo jak sobie radzić z takimi problemami najlepiej (RWD)
 //chodzi mi np w devtoolsach , telefon Moto G4 portreit 360 wygłada ok , ale jak damy poziomo to juz jest za duze i nie mieści sie , wiem że moge stworzyć odpowiedni breakpoint na 640 i dopasowac do tego odpowiednie style , ale nie jestem w stanie stworzyc wszystkie breakponity dla landscape , bo przeciez czasem mamy portrait które ma podobna rzdzielczosc co jakies urzadzenie w landscape, wiem też że mogę przy każdym breakpoincie dopisać orientetion:landscape , jak to wszystko wygląda w Praktyce ?
 // 2  Java script - Czy mogłabyś mi wytlumaczyć twoje rozwiązanie , jak się zabrać za kod tworząc to rozwiązanie , moje strzałki nie działają , tylko pierwsza - ( o Java script malo wiem, właśnie po stylowaniu stron, na tym chce się skupić ) Jak najlepiej  zacząć naukę Java script ... 
-// 3. Chciałam ustawic na githubie , demo live ( link) do tego repozytorium , po wejściu w usawienia na github Page, i po opublikowaniu dostaje link do strony tak jakby bez styli 
+// 3.coś z Githubem sie stało po Twoim commicie , moja wersja repo zdalna na Githubie nawet nie ma plików z JS ( brat powiedział ze sprobuje pomóc jutro wieczorem )
 // 4. Moze starczy czasu tym razem na to zaległe z ostatni 2 spotkań :Jeśli chodzi o ten overlay niebieski który jest pod zdjęciem - zapomomniałam że to rozwiązywało problem scrolla na dole , jeśli damy twoje rozwiązanie, czyli usunięcie overflow: hidden; + zmiana right i width , to dostajemy scrolla na dole ;)
 // 5. Zwiększenie  sekcji contact i footer na cała szerokość width -  jest to zablokowane przez ustawienie main-width na 1540px ( można to jakość obejść ? )
