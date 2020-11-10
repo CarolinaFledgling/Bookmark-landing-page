@@ -1,26 +1,24 @@
 //  Frequently Asked Questions open & close 
-const arrowRemove = document.querySelector(".arrow-remove");
-const arrowAdd = document.querySelector(".arrow-add");
-const answer = document.querySelector(".accordion__answer");
+// tego nie uzywaliśmy przez name shadowing, korzystaliśmy ze zmiennej z blizszego zakresu
 const questions = document.querySelectorAll(".accordion__item");
-
+// zwróć uwagę czy pobierasz element uzywajac document czy chcesz wyszukac go w konkretnym elemencie
 
 questions.forEach((item) => {
   const answer = item.querySelector(".accordion__answer");
   item.addEventListener("click", () => {
     answer.classList.toggle("show-accordion");
-    
+    const arrowRemove = item.querySelector(".arrow-remove");
+    const arrowAdd = item.querySelector(".arrow-add");
     if (answer.classList.contains('show-accordion')) {
-    arrowRemove.style.display = "block"
-    arrowAdd.style.display = "none"
+      arrowRemove.style.display = "block"
+      arrowAdd.style.display = "none"
   } else {
-     arrowRemove.style.display = "none"
-     arrowAdd.style.display = "block"
+      arrowRemove.style.display = "none"
+      arrowAdd.style.display = "block"
   }
   });
 
 });
-
 
 
 //Hambuger menu
