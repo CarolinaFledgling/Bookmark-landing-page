@@ -1,5 +1,5 @@
 //  Frequently Asked Questions open & close 
-// tego nie uzywaliśmy przez name shadowing, korzystaliśmy ze zmiennej z blizszego zakresu
+
 const questions = document.querySelectorAll(".accordion__item");
 // zwróć uwagę czy pobierasz element uzywajac document czy chcesz wyszukac go w konkretnym elemencie
 
@@ -12,13 +12,42 @@ questions.forEach((item) => {
     if (answer.classList.contains('show-accordion')) {
       arrowRemove.style.display = "block"
       arrowAdd.style.display = "none"
-  } else {
+    } else {
       arrowRemove.style.display = "none"
       arrowAdd.style.display = "block"
-  }
+    }
   });
 
 });
+
+//Hiding the guestions  when user clicks outside 
+const question1 = document.querySelector(".accordion__item")
+const header = document.querySelector('.question-header__title')
+const answer = document.querySelector(".accordion__answer");
+
+document.addEventListener('click', (event) =>{
+  let isClicing = question1.contains(event.target)
+ console.log(isClicing)
+ if(isClicing === false){
+   answer.classList.remove("show-accordion")
+ }
+})
+
+const questions2 = document.querySelectorAll(".accordion__item");
+
+// questions2.forEach((question) => {
+//   question.addEventListener('click', (event) => {
+//     let isClick = question.contains(event.target);
+//     console.log(isClick)
+//     if (isClick === false) {
+//       answer.classList.remove("show-accordion")
+//     }
+//   })
+// })
+
+
+
+
 
 
 //Hambuger menu
@@ -44,3 +73,8 @@ function toggleMenu() {
 
 
 
+
+
+// Zapytac 
+
+// Co to jest e.preventDefault(): 
