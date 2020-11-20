@@ -1,7 +1,7 @@
 //  Frequently Asked Questions open & close 
 
 const questions = document.querySelectorAll(".accordion__item");
-// zwróć uwagę czy pobierasz element uzywajac document czy chcesz wyszukac go w konkretnym elemencie
+// pobierając element zwrócić uwagę czy szukasz go w konkretnym elemencie , czy w calym dokumencie 
 
 questions.forEach((item) => {
   const answer = item.querySelector(".accordion__answer");
@@ -21,34 +21,27 @@ questions.forEach((item) => {
 });
 
 //Hiding the guestions  when user clicks outside 
-const question1 = document.querySelector(".accordion__item")
-const header = document.querySelector('.question-header__title')
-const answer = document.querySelector(".accordion__answer");
 
-document.addEventListener('click', (event) =>{
-  let isClicing = question1.contains(event.target)
- console.log(isClicing)
- if(isClicing === false){
-   answer.classList.remove("show-accordion")
- }
+document.addEventListener('click', (event) => {
+  event.preventDefault(); 
+  // hamuje natywne zachowanie przeglądarki 
+  questions.forEach((question) => {
+    
+    let isClickInsideQuestion = question.contains(event.target);
+    //sprawdza to miejsce które jest kliknięte 
+
+    console.log(isClickInsideQuestion, question, event.target)
+
+    if (isClickInsideQuestion === false) {
+      
+      const answer = question.querySelector('.accordion__answer')
+      console.log("Answer", question, answer)
+      answer.classList.remove("show-accordion")
+      
+    }
+  })
+
 })
-
-const questions2 = document.querySelectorAll(".accordion__item");
-
-// questions2.forEach((question) => {
-//   question.addEventListener('click', (event) => {
-//     let isClick = question.contains(event.target);
-//     console.log(isClick)
-//     if (isClick === false) {
-//       answer.classList.remove("show-accordion")
-//     }
-//   })
-// })
-
-
-
-
-
 
 //Hambuger menu
 
@@ -69,12 +62,3 @@ function toggleMenu() {
   navLogoDesktop.classList.toggle("hide");
   loginBtn.classList.toggle("showBtnLogin");
 }
-
-
-
-
-
-
-// Zapytac 
-
-// Co to jest e.preventDefault(): 
