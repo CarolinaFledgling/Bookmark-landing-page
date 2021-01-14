@@ -24,7 +24,7 @@ For this challenge I had to:
 - The email address is not formatted correctly
 
 
-## Preview the website live on : [DEMO](https://carolinafledgling.github.io/Simple-Landing-Page-/)
+## Preview the website live on : [DEMO]( https://carolinafledgling.github.io/Bookmark-landing-page/)
 
 ## Screenshots
 ![](images//readme.jpg)
