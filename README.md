@@ -5,7 +5,7 @@
 It's a training project,
 This project was made independently and without any starter code. It is made with HTML, CSS, SASS, BEM  and JavaScript.
 The challenge is to build out this landing page and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+I could use any tools I like to help me complete the challenge. 
 ## General info
 This landing based was coded based on the design by [Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158)
 
