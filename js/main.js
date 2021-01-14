@@ -1,7 +1,7 @@
 //  Frequently Asked Questions open & close 
 
 const questions = document.querySelectorAll(".accordion__item");
-// pobierając element zwrócić uwagę czy szukasz go w konkretnym elemencie , czy w calym dokumencie 
+// pobierając element zwrócić uwagę czy szukam go w konkretnym elemencie , czy w calym dokumencie 
 
 questions.forEach((item) => {
   const answer = item.querySelector(".accordion__answer");

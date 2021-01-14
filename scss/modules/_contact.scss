@@ -29,7 +29,6 @@
 .contact-info {
   display: flex;
   justify-content: center;
-
   width: 100%;
 
   @include breakpoint-responsive("md") {
