@@ -27,7 +27,7 @@ For this challenge I had to:
 ## Preview the website live on : [DEMO](https://carolinafledgling.github.io/Simple-Landing-Page-/)
 
 ## Screenshots
-![](assets/img/readme.jpg)
+![](images//readme.jpg)
 
 ## Code Examples
 
