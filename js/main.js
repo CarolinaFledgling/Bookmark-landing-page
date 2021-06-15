@@ -1,7 +1,7 @@
 //  Frequently Asked Questions open & close 
 
 const questions = document.querySelectorAll(".accordion__item");
-// pobierając element zwrócić uwagę czy szukam go w konkretnym elemencie , czy w calym dokumencie 
+// When downloading an element, pay attention to whether you are looking for it in a specific element or in the entire document
 
 questions.forEach((item) => {
   const answer = item.querySelector(".accordion__answer");
@@ -26,14 +26,11 @@ questions.forEach((item) => {
 
 document.addEventListener('click', (event) => {
   event.preventDefault(); 
-  // hamuje natywne zachowanie przeglądarki 
+ 
   questions.forEach((question) => {
     
     let isClickInsideQuestion = question.contains(event.target);
-    //sprawdza to miejsce które jest kliknięte 
-
     // console.log(isClickInsideQuestion, question, event.target)
-
     if (isClickInsideQuestion === false) {
       
       const answer = question.querySelector('.accordion__answer')
